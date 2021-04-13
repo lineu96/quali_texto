@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  6 APR 2021 00:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  13 APR 2021 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1450,8 +1450,8 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (./0-iniciais/catalografica.aux) (./0-iniciais/aprovacao.aux)
 (./0-iniciais/dedica.aux) (./0-iniciais/agradece.aux) (./0-iniciais/resumo.aux)
 (./0-iniciais/abstract.aux) (./0-iniciais/acronimos.aux)
-(./0-iniciais/simbolos.aux) (./1-intro/texto.aux) (./2-mcglm/texto.aux)
-(./3-wald/texto.aux) (./4-funcoes/texto.aux) (./5-simula/texto.aux))
+(./0-iniciais/simbolos.aux) (./1-intro/texto.aux) (./2-literatura/texto.aux)
+(./3-proposta/texto.aux) (./4-result/texto.aux) (./5-cronograma/texto.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 46.
@@ -1904,57 +1904,64 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 161.
  [11]
-\openout2 = `2-mcglm/texto.aux'.
+\openout2 = `2-literatura/texto.aux'.
 
- (./2-mcglm/texto.tex
+ (./2-literatura/texto.tex
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 18.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 20.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 8.8pt on input line 20.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 6.6pt on input line 20.
+(babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 41.
+(babel)             in language  on input line 17.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 19.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.8pt on input line 19.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 6.6pt on input line 19.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 40.
 [12
 
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 56.
  [13]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 59.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 93.
+(Font)              scaled to size 12.0pt on input line 92.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 101.
+(babel)             in language  on input line 100.
  [14]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 163.
+(Font)              scaled to size 8.8pt on input line 162.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 163.
+(Font)              scaled to size 6.6pt on input line 162.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 175.
- [15])
+(babel)             in language  on input line 174.
+ [15]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 189.
+)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 162.
  [16]
-\openout2 = `3-wald/texto.aux'.
+\openout2 = `3-proposta/texto.aux'.
 
- (./3-wald/texto.tex
+ (./3-proposta/texto.tex
 Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining portuges shorthand "|
@@ -1981,52 +1988,61 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 81.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 84.
+(babel)             in language  on input line 88.
  [19]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 92.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 148.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 151.
 
 [20]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 148.
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 177.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 180.
+(babel)             in language  on input line 182.
  [21])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 163.
  [22]
-\openout2 = `4-funcoes/texto.aux'.
+\openout2 = `4-result/texto.aux'.
 
- (./4-funcoes/texto.tex
+ (./4-result/texto.tex
 Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 6.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 15.
 [23
 
 
 
 ]
+
+LaTeX Warning: Reference `cap:wald' on page 24 undefined on input line 44.
+
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 60.
- [24]
+(babel)             in language  on input line 59.
+[24]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 87.
+(babel)             in language  on input line 86.
  [25]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 111.
- [26])
+(babel)             in language  on input line 110.
+ [26]
+
+LaTeX Warning: Reference `cap:mcglm' on page 27 undefined on input line 110.
+
+)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 164.
  [27]
-\openout2 = `5-simula/texto.aux'.
+\openout2 = `5-cronograma/texto.aux'.
 
- (./5-simula/texto.tex
+ (./5-cronograma/texto.tex
 Cap\'{\i }tulo 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
@@ -2046,29 +2062,33 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 201.
+(babel)             in language  on input line 200.
  [30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
  (./main.aux (./0-iniciais/catalografica.aux)
 (./0-iniciais/aprovacao.aux) (./0-iniciais/dedica.aux)
 (./0-iniciais/agradece.aux) (./0-iniciais/resumo.aux)
 (./0-iniciais/abstract.aux) (./0-iniciais/acronimos.aux)
-(./0-iniciais/simbolos.aux) (./1-intro/texto.aux) (./2-mcglm/texto.aux)
-(./3-wald/texto.aux) (./4-funcoes/texto.aux) (./5-simula/texto.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 201.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
+(./0-iniciais/simbolos.aux) (./1-intro/texto.aux) (./2-literatura/texto.aux)
+(./3-proposta/texto.aux) (./4-result/texto.aux) (./5-cronograma/texto.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 200.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
  ) 
 Here is how much of TeX's memory you used:
- 17867 strings out of 492982
- 263820 string characters out of 6134895
- 502345 words of memory out of 5000000
- 20615 multiletter control sequences out of 15000+600000
+ 17877 strings out of 492982
+ 264034 string characters out of 6134895
+ 502275 words of memory out of 5000000
+ 20621 multiletter control sequences out of 15000+600000
  83724 words of font info for 218 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,18n,81p,1302b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,18n,81p,1320b,535s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texm
 f-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fon
 ts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/ec
@@ -2088,10 +2108,10 @@ hare/texlive/texmf-dist/fonts/type1/public/newtx/txbsys.pfb></usr/share/texlive
 onts/type1/public/txfonts/txmia.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newt
 x/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (30 pages, 230843 bytes).
+Output written on main.pdf (30 pages, 231431 bytes).
 PDF statistics:
- 533 PDF objects out of 1000 (max. 8388607)
- 460 compressed objects within 5 object streams
- 124 named destinations out of 1000 (max. 500000)
- 20105 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 556 PDF objects out of 1000 (max. 8388607)
+ 479 compressed objects within 5 object streams
+ 128 named destinations out of 1000 (max. 500000)
+ 20137 words of extra memory for PDF output out of 20736 (max. 10000000)
 

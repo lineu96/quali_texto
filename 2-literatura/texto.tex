@@ -1,9 +1,8 @@
-\chapter{Modelos Multivariados de Covariância Linear Generalizada}
+\chapter{Revisão de litaratura}
 
-\label{cap:mcglm}
+\label{cap:literatura}
 
-% figuras estão no subdiretório "figuras/" dentro deste capítulo
-%\graphicspath{\currfiledir/figuras/}
+\section{Modelos Multivariados de Covariância Linear Generalizada}
 
 Os Modelos Linerares Generalizados (GLM), propostos por \citet{Nelder72}, são uma forma de modelagem univariada para dados de diferentes naturezas, tais como respostas contínuas, binárias e contagens. Tais características tornam essa classe de modelos uma flexível ferramenta de modelagem aplicável a diversos tipos de problema. Contudo, por mais flexível e discutida na literatura, essa classe apresenta duas principais restrições:
 
@@ -15,7 +14,7 @@ Com o objetivo de contornar estas restrições, foi proposta por \citet{Bonat16}
 
 Vamos discutir os McGLM como uma extensão dos GLM. Vale ressaltar que é usada uma especificação menos usual de um Modelo Linear Generalizado, porém trata-se de uma notação mais conveniente para chegar à uma especificação melhor construída de um Modelo Multivariado de Covariância Linear Generalizada.
 
-\section{GLM}
+\subsection{GLM}
 
 Seja $\boldsymbol{Y}$ um vetor $N \times 1$ de valores observados da variável resposta, $\boldsymbol{X}$ uma matriz de delineamento $N \times k$ e $\boldsymbol{\beta}$ um vetor de parâmetros de regressão $k \times 1$, um GLM pode ser descrito da forma
 
@@ -43,7 +42,7 @@ Os GLM fazem uso de apenas duas funções, a função de variância e de ligaç�
 
 Lembre-se que o GLM é uma classe de modelos de regressão univariados em que um dos pressupostos é a indepenência entre as observações. Esta independência é especificada na matriz identidade no centro da equação que define a matriz de variância e covariância. Podemos imaginar que, substituindo esta matriz identidade por uma matriz qualquer que reflita a relação entre os indivíduos da amostra teremos uma extensão do Modelo Linear Generalizado para observações dependentes. É justamente essa a ideia dos Modelos de Covariância Linear Generalizada, o cGLM.
 
-\section{cGLM}
+\subsection{cGLM}
 
 Os cGLM são uma alternativa para problemas em que a suposição de independência entre as observações não é atendida. Neste caso, a solução proposta é substituir a matriz identidade $\boldsymbol{I}$ da equação que descreve a matriz de variância e covariância por uma matriz não diagonal $\boldsymbol{\Omega({\tau})}$ que descreva adequadamente a estrutura de correlação entre as observações. Trata-se de uma ideia similar à proposta de \citet{Liang86} nos modelos GEE (Equações de Estimativas Generalizadas), em que utiliza-se uma matriz de correlação de trabalho para considerar a dependência entre as observações. A matriz $\boldsymbol{\Omega({\tau})}$ é descrita como uma combinação de matrizes conhecidas tal como nas propostas de \citet{Anderson73} e \citet{Pourahmadi00}, podendo ser escrita da forma
 
@@ -57,7 +56,7 @@ Com isso, substituindo a matriz identidade pela equação do preditor linear mat
 
 Deste modo, é contornada a primeira restrição dos GLM. A segunda restrição diz respeito às múltiplas respostas e, resolvendo esta restrição, chegamos ao McGLM.
 
-\section{McGLM}
+\subsection{McGLM}
 
 O McGLM pode ser entendido como uma extensão multivariada do cGLM e contorna as duas principais restrições presentes nos GLM, pois além de permitir a modelagem de dados com estrutura de covariância, permite modelar múltiplas respostas.
 
@@ -186,3 +185,9 @@ Para resolver o sistema de equações $\psi_{\boldsymbol{\beta}} = 0$ e $\psi_{\
 \end{matrix}
 \end{aligned}
 \end{equation}
+
+\section{Testes de hipótese}
+
+
+
+

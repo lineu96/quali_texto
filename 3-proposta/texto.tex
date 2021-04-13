@@ -1,12 +1,12 @@
 
-\chapter{Teste Wald no contexto dos McGLM}
+\chapter{Proposta}
 
-\label{cap:wald}
+\label{cap:proposta}
 
-% figuras estão no subdiretório "figuras/" dentro deste capítulo
-%\graphicspath{\currfiledir/figuras/}
+\section{Teste Wald no contexto dos McGLM}
 
-\section{O teste Wald}
+
+\subsection{O teste Wald}
 
 O teste Wald é um teste de hipóteses amplamente difundido para análises de Modelos Lineares e Modelos Lineares Generalizados para verificar suposições sobre os parâmetros do modelo, isto é, verifcar se a estimativa do parâmetro é ou não estatísticamente igual a um valor qualquer.
 
@@ -18,7 +18,7 @@ Quando trabalhamos com modelos de regressão, estes tipos de teste são extremen
 
 Existe também a possibilidade de formular hipóteses para mais de um parâmetro de regressão e ainda testar valores diferentes de 0, tudo depende do objetivo do estudo e do interesse do pesquisador. 
 
-\section{Adaptação do teste para os McGLM}
+\subsection{Adaptação do teste para os McGLM}
 
 Quando trabalhamos na classe dos McGLM estimamos parâmetros de regressão, dispersão e potência. Os parâmetros de regressão são aqueles que associam a variável explicativa à variável resposta. Os parâmetros de dispersão estão associados ao preditor matricial e, em geral, cada matriz do preditor matricial diz respeito a uma estrutura de correlação existente entre as unidades amostrais do conjunto de dados, deste modo, os parâmetros de dispersão podem ser usados para avaliar se existe efeito da relação entre as unidades amostrais tal como foi especificado pelo preditor matricial. Já os parâmetros de potência nos fornecem um indicativo de qual distribuição de probabilidade melhor se adequa ao problema. 
 
@@ -46,7 +46,7 @@ Cada coluna da matriz $\boldsymbol{L}$ corresponde a um dos $h$ parâmetros do m
 
 A correta especificação da matriz permite testar qualquer parâmetro individualmente ou até mesmo formular hipóteses para diversos parâmetros simultaneamente, sejam eles de regressão, dispersão ou potência. Independente do número de parâmetros testados, a estatística de teste $W$ é um único valor que segue assintóticamente distribuição $\chi^2$ com graus de liberdade dados pelo número de parâmetros testados, isto é, o número de linhas da matriz $\boldsymbol{L}$, denotado por $s$.
 
-\section{Exemplos de hipóteses}
+\subsection{Exemplos de hipóteses}
 
 Em um contexto prático, um analista após a obtenção dos parâmetros do modelo pode estar interessado em 3 tipos de hipótese: a primeira delas diz respeito a quando o interesse está em avaliar se existe evidência que permita afirmar que apenas um único parâmetro é igual a um valor postulado; a segunda delas ocorre quando há interesse em avaliar se existe evidência para afirmar que mais de um parâmetro simultâneamente são iguais a um vetor de valores postulado; e a terceira hipótese diz respeito a situações em que o analista está interessado em saber se a diferença entre os efeitos de duas variáveis é igual a 0.
 
@@ -174,7 +174,7 @@ Como existe apenas uma hipótese, a matriz $\boldsymbol{L}$ possui apenas uma li
 
 É possível testar qualquer parâmetro individualmente, formular hipóteses para diversos parâmetros simultaneamente (sejam eles de regressão, dispersão, potência), formular hipóteses para combinações entre estes parâmetros e testar valores diferentes de zero. Como explicitado nos exemplos, basta uma correta especificação da matriz $\boldsymbol{L}$. Independente do número de parâmetros testados, a estatística de teste $W$ é um único valor que segue assintóticamente distribuição $\chi^2$ em que os graus de liberdade são dados pelo número de hipóteses, isto é, o número de linhas da matriz $\boldsymbol{L}$, denotado por $s$.
 
-\section{ANOVA e MANOVA via teste Wald}
+\subsection{ANOVA e MANOVA via teste Wald}
 
 Quando trabalhamos com modelos univariados, uma das formas de avaliar a significância de cada uma das variáveis de uma forma procedural é através da análise de variância (ANOVA). Este método consiste em efetuar testes sucessivos impondo restrições ao modelo original. O objetivo é testar se a ausência de determinada variável gera perda ao modelo. Os resultados destes sucessivos testes são sumarizados numa tabela, o chamado quadro de análise de variância, que contêm em cada linha: a variável, o valor de uma estatística de teste referente à hipótese de nulidade de todos os parâmetros associados à esta variável, os graus de liberdade desta hipótese, e um p-valor associado à hipótese testada naquela linha do quadro.
 
