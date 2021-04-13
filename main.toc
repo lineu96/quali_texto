@@ -1,0 +1,23 @@
+\babel@toc {brazilian}{}
+\babel@toc {brazilian}{}
+\babel@toc {brazilian}{}
+\babel@toc {english}{}
+\babel@toc {brazilian}{}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{9}{chapter.11}
+\contentsline {chapter}{\numberline {2}Modelos Multivariados de Covari\IeC {\^a}ncia Linear Generalizada}{12}{chapter.16}
+\contentsline {section}{\numberline {2.1}GLM}{12}{section.17}
+\contentsline {section}{\numberline {2.2}cGLM}{13}{section.19}
+\contentsline {section}{\numberline {2.3}McGLM}{14}{section.21}
+\contentsline {subsection}{\numberline {2.3.1}Estima\IeC {\c c}\IeC {\~a}o e infer\IeC {\^e}ncia}{14}{subsection.24}
+\contentsline {chapter}{\numberline {3}Teste Wald no contexto dos McGLM}{17}{chapter.34}
+\contentsline {section}{\numberline {3.1}O teste Wald}{17}{section.35}
+\contentsline {section}{\numberline {3.2}Adapta\IeC {\c c}\IeC {\~a}o do teste para os McGLM}{17}{section.36}
+\contentsline {section}{\numberline {3.3}Exemplos de hip\IeC {\'o}teses}{19}{section.39}
+\contentsline {subsection}{\numberline {3.3.1}Exemplo 1}{19}{subsection.41}
+\contentsline {subsection}{\numberline {3.3.2}Exemplo 2}{20}{subsection.44}
+\contentsline {subsection}{\numberline {3.3.3}Exemplo 3}{21}{subsection.47}
+\contentsline {section}{\numberline {3.4}ANOVA e MANOVA via teste Wald}{21}{section.49}
+\contentsline {chapter}{\numberline {4}Fun\IeC {\c c}\IeC {\~o}es implementadas}{23}{chapter.50}
+\contentsline {chapter}{\numberline {5}Estudo de simula\IeC {\c c}\IeC {\~a}o}{28}{chapter.65}
+\contentsline {chapter}{REFER\^ENCIAS}{29}{chapter*.66}
+\contentsfinish 
