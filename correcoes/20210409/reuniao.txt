@@ -1,0 +1,65 @@
+--------------------------------------------------------------------
+
+Estrutura sugerida
+
+Resumo
+Abstract
+Introdução (ciencia de dados até testes de hipótese nos mcglm)
+Revisão de litaratura (McGLM e testes de hipótese)
+Proposta (Teste Wald no contexto dos McGLM)
+Resultados preliminares (lista das funções, utilidade, exemplos)
+Cronograma (estudo de simulação, aplicação, desafios, resultados esperados)
+
+Ou
+
+Resumo
+Abstract
+Introdução (ciencia de dados até testes de hipótese nos mcglm)
+Revisão de litaratura (McGLM e testes de hipótese)
+Proposta (Teste Wald no contexto dos McGLM, resultados preliminares, cronograma)
+
+--------------------------------------------------------------------
+
+DA REUNIÃO
+
+Definir mcglm e teste de hipótese na revisão de literatura (notação, porquê fazer, buscar algum livro sobre testes)
+
+Distinguir melhor literatura de proposta
+
+Manter estrutura da introdução mas acrescentar referências
+
+Revisar parágrafos muito curtos, muito longos, frases longas e evitar 2 ideias na mesma frase
+
+Manter parágrafos de tamanhos similares e deixar o objetivo num paragrafo menor
+
+Começar capitulos dizendo oq está ali e como estas coisas estao ligadas ao objetivo
+
+Melhorar texto da anova
+
+Para a dissertação provavelmente haverá um capitulo para explicar as funções e outro para argumentos e exemplos
+
+Não é prioridade para a quali mas seria bom acrescentar um exemplo completo, aplicando todas as funções
+
+Referenciar dados comuns na informatica: datasets de estudos de simulação de diferentes campos
+
+Importante definir melhor o que pretendo fazer pra frente e como
+
+--------------------------------------------------------------------
+
+DA REVISÃO DO WAGNER
+
+Precisa de acrônimos e símbolos?
+
+Não usar abreviações nos nomes das seções e subseções
+
+Escrever resumo e abstract
+
+Maiúsculas so para nomes próprios 
+
+
+
+
+
+
+
+

@@ -24,15 +24,35 @@ Box, G.~E. e Cox, D.~R. (1964).
 \newblock {\em Journal of the Royal Statistical Society. Series B
   (Methodological)}, p\'aginas 211--252.
 
+\bibitem[Cao, 2016]{cao2016data}
+Cao, L. (2016).
+\newblock Data science and analytics: a new era.
+
+\bibitem[Cordeiro e Dem{\'e}trio, 2008]{cordeiro}
+Cordeiro, G.~M. e Dem{\'e}trio, C.~G. (2008).
+\newblock Modelos lineares generalizados e extens{\~o}es.
+\newblock {\em Piracicaba: USP}.
+
 \bibitem[Demidenko, 2013]{Demidenko13}
 Demidenko, E. (2013).
 \newblock {\em Mixed models: theory and applications with R}.
 \newblock John Wiley \& Sons.
 
+\bibitem[Fisher, 1925]{fisher}
+Fisher, R.~A. (1925).
+\newblock Statistical methods for research workers. oliver and boyd.
+\newblock {\em Edinburgh, Scotland}, 6.
+
 \bibitem[Fox e Weisberg, 2019]{car}
 Fox, J. e Weisberg, S. (2019).
 \newblock {\em An {R} Companion to Applied Regression}.
 \newblock Sage, Thousand Oaks {CA}, third edition.
+
+\bibitem[Galton, 1886]{galton}
+Galton, F. (1886).
+\newblock Regression towards mediocrity in hereditary stature.
+\newblock {\em The Journal of the Anthropological Institute of Great Britain
+  and Ireland}, 15:246--263.
 
 \bibitem[Hotelling, 1951]{hotelling}
 Hotelling, H. (1951).
@@ -66,10 +86,34 @@ J{\o}rgensen, B. e Kokonendji, C.~C. (2015).
 \newblock Discrete dispersion models and their tweedie asymptotics.
 \newblock {\em AStA Advances in Statistical Analysis}, 100(1):43--78.
 
+\bibitem[Larsen et~al., 2011]{pco2}
+Larsen, S., Andersen, T.  e Hessen, D.~O. (2011).
+\newblock The pco2 in boreal lakes: Organic carbon as a universal predictor?
+\newblock {\em Global Biogeochemical Cycles}, 25(2).
+
 \bibitem[Lawley, 1938]{lawley}
 Lawley, D. (1938).
 \newblock A generalization of fisher's z test.
 \newblock {\em Biometrika}, 30(1/2):180--187.
+
+\bibitem[Lehmann, 1993]{lehmann}
+Lehmann, E.~L. (1993).
+\newblock The fisher, neyman-pearson theories of testing hypotheses: one theory
+  or two?
+\newblock {\em Journal of the American statistical Association},
+  88(424):1242--1249.
+
+\bibitem[Lehmann e Romano, 2006]{lehmann2}
+Lehmann, E.~L. e Romano, J.~P. (2006).
+\newblock {\em Testing statistical hypotheses}.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Ley e Bordas, 2018]{ley2018makes}
+Ley, C. e Bordas, S.~P. (2018).
+\newblock What makes data science different? a discussion involving
+  statistics2. 0 and computational sciences.
+\newblock {\em International Journal of Data Science and Analytics},
+  6(3):167--175.
 
 \bibitem[Liang e Zeger, 1986]{Liang86}
 Liang, K.-Y. e Zeger, S.~L. (1986).
@@ -98,11 +142,42 @@ Martinez-Beneito, M.~A. (2013).
 \newblock A general modelling framework for multivariate disease mapping.
 \newblock {\em Biometrika}, 100(3):539--553.
 
+\bibitem[Michelon et~al., 2019]{euc}
+Michelon, T.~B., Taconeli, C.~A., Vieira, E. S.~N.  e Panobianco, M. (2019).
+\newblock Dados de contagem em sementes de eucalyptus cloeziana: uma
+  an{\'a}lise comparativa entre modelos estat{\'\i}sticos.
+\newblock {\em Ci{\^e}ncia e Agrotecnologia}, 43.
+
 \bibitem[Nelder e Wedderburn, 1972]{Nelder72}
 Nelder, J.~A. e Wedderburn, R. W.~M. (1972).
 \newblock {Generalized Linear Models}.
 \newblock {\em Journal of the Royal Statistical Society. Series A (General)},
   135:370--384.
+
+\bibitem[Neyman e Pearson, 1928a]{neyman1}
+Neyman, J. e Pearson, E.~S. (1928a).
+\newblock On the use and interpretation of certain test criteria for purposes
+  of statistical inference: Part i.
+\newblock {\em Biometrika}, p\'aginas 175--240.
+
+\bibitem[Neyman e Pearson, 1928b]{neyman2}
+Neyman, J. e Pearson, E.~S. (1928b).
+\newblock On the use and interpretation of certain test criteria for purposes
+  of statistical inference: Part ii.
+\newblock {\em Biometrika}, p\'aginas 263--294.
+
+\bibitem[Paula, 2004]{paula}
+Paula, G.~A. (2004).
+\newblock {\em Modelos de regress{\~a}o: com apoio computacional}.
+\newblock IME-USP S{\~a}o Paulo.
+
+\bibitem[Petterle et~al., 2017]{capacete}
+Petterle, R.~R., de~Freitas, C.~A., Furtado, A.~M., de~Carvalho, F.~H.  e
+  Bonat, W.~H. (2017).
+\newblock Compara{\c{c}}{\~a}o e aplica{\c{c}}{\~a}o de modelos de
+  regress{\~a}o bin{\'a}ria na reten{\c{c}}{\~a}o de capacetes de
+  motociclistas.
+\newblock {\em Revista Brasileira de Biometria}, 35(2):266--282.
 
 \bibitem[Pillai et~al., 1955]{pillai}
 Pillai, K. et~al. (1955).
@@ -120,6 +195,13 @@ Pourahmadi, M. (2000).
   multivariate normal covariance matrix.
 \newblock {\em Biometrika}, 87(2):425--435.
 
+\bibitem[Press, 2013]{histds}
+Press, G. (2013).
+\newblock A very short history of data science.
+\newblock
+  \url{https://www.forbes.com/sites/gilpress/2013/05/28/a-very-short-history-of-data-science/?sh=1c01914855cf}.
+\newblock Acessado em 14/04/2021.
+
 \bibitem[{R Core Team}, 2020]{softwareR}
 {R Core Team} (2020).
 \newblock {\em R: A Language and Environment for Statistical Computing}.
@@ -135,6 +217,12 @@ Roy, S.~N. (1953).
 Smith, H., Gnanadesikan, R.  e Hughes, J. (1962).
 \newblock Multivariate analysis of variance (manova).
 \newblock {\em Biometrics}, 18(1):22--41.
+
+\bibitem[Weihs e Ickstadt, 2018]{weihs2018data}
+Weihs, C. e Ickstadt, K. (2018).
+\newblock Data science: the impact of statistics.
+\newblock {\em International Journal of Data Science and Analytics},
+  6(3):189--194.
 
 \bibitem[Wilks, 1932]{wilks}
 Wilks, S.~S. (1932).
