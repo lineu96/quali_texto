@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Aitchison e Silvey, 1958]{score1}
+Aitchison, J. e Silvey, S. (1958).
+\newblock Maximum-likelihood estimation of parameters subject to restraints.
+\newblock {\em The annals of mathematical Statistics}, p\'aginas 813--828.
+
 \bibitem[Anderson et~al., 1973]{Anderson73}
 Anderson, T. et~al. (1973).
 \newblock Asymptotically efficient estimation of covariance matrices with
@@ -37,6 +42,18 @@ Cordeiro, G.~M. e Dem{\'e}trio, C.~G. (2008).
 Demidenko, E. (2013).
 \newblock {\em Mixed models: theory and applications with R}.
 \newblock John Wiley \& Sons.
+
+\bibitem[Engle, 1984]{engle}
+Engle, R.~F. (1984).
+\newblock Wald, likelihood ratio, and lagrange multiplier tests in
+  econometrics.
+\newblock {\em Handbook of econometrics}, 2:775--826.
+
+\bibitem[Evans e Savin, 1982]{conflict}
+Evans, G. e Savin, N.~E. (1982).
+\newblock Conflict among the criteria revisited; the w, lr and lm tests.
+\newblock {\em Econometrica: Journal of the Econometric Society}, p\'aginas
+  737--748.
 
 \bibitem[Fisher, 1925]{fisher}
 Fisher, R.~A. (1925).
@@ -207,16 +224,35 @@ Press, G. (2013).
 \newblock {\em R: A Language and Environment for Statistical Computing}.
 \newblock R Foundation for Statistical Computing, Vienna, Austria.
 
+\bibitem[Rao, 1948]{score3}
+Rao, C.~R. (1948).
+\newblock Large sample tests of statistical hypotheses concerning several
+  parameters with applications to problems of estimation.
+\newblock Em {\em Mathematical Proceedings of the Cambridge Philosophical
+  Society}, volume~44, p\'aginas 50--57. Cambridge University Press.
+
 \bibitem[Roy, 1953]{roy}
 Roy, S.~N. (1953).
 \newblock On a heuristic method of test construction and its use in
   multivariate analysis.
 \newblock {\em The Annals of Mathematical Statistics}, p\'aginas 220--238.
 
+\bibitem[Silvey, 1959]{score2}
+Silvey, S.~D. (1959).
+\newblock The lagrangian multiplier test.
+\newblock {\em The Annals of Mathematical Statistics}, 30(2):389--407.
+
 \bibitem[Smith et~al., 1962]{manova}
 Smith, H., Gnanadesikan, R.  e Hughes, J. (1962).
 \newblock Multivariate analysis of variance (manova).
 \newblock {\em Biometrics}, 18(1):22--41.
+
+\bibitem[Wald, 1943]{wald}
+Wald, A. (1943).
+\newblock Tests of statistical hypotheses concerning several parameters when
+  the number of observations is large.
+\newblock {\em Transactions of the American Mathematical society},
+  54(3):426--482.
 
 \bibitem[Weihs e Ickstadt, 2018]{weihs2018data}
 Weihs, C. e Ickstadt, K. (2018).
@@ -228,6 +264,12 @@ Weihs, C. e Ickstadt, K. (2018).
 Wilks, S.~S. (1932).
 \newblock Certain generalizations in the analysis of variance.
 \newblock {\em Biometrika}, p\'aginas 471--494.
+
+\bibitem[Wilks, 1938]{trv}
+Wilks, S.~S. (1938).
+\newblock The large-sample distribution of the likelihood ratio for testing
+  composite hypotheses.
+\newblock {\em The annals of mathematical statistics}, 9(1):60--62.
 
 \bibitem[Zeileis e Hothorn, 2002]{lmtest}
 Zeileis, A. e Hothorn, T. (2002).
