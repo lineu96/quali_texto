@@ -60,6 +60,12 @@ Fisher, R.~A. (1925).
 \newblock Statistical methods for research workers. oliver and boyd.
 \newblock {\em Edinburgh, Scotland}, 6.
 
+\bibitem[Fisher e Mackenzie, 1923]{anova_fisher}
+Fisher, R.~A. e Mackenzie, W.~A. (1923).
+\newblock Studies in crop variation. ii. the manurial response of different
+  potato varieties.
+\newblock {\em The Journal of Agricultural Science}, 13(3):311–320.
+
 \bibitem[Fox e Weisberg, 2019]{car}
 Fox, J. e Weisberg, S. (2019).
 \newblock {\em An {R} Companion to Applied Regression}.
@@ -246,6 +252,11 @@ Silvey, S.~D. (1959).
 Smith, H., Gnanadesikan, R.  e Hughes, J. (1962).
 \newblock Multivariate analysis of variance (manova).
 \newblock {\em Biometrics}, 18(1):22--41.
+
+\bibitem[St et~al., 1989]{anova1}
+St, L., Wold, S.  et~al. (1989).
+\newblock Analysis of variance (anova).
+\newblock {\em Chemometrics and intelligent laboratory systems}, 6(4):259--272.
 
 \bibitem[Wald, 1943]{wald}
 Wald, A. (1943).
