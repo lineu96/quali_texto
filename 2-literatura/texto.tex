@@ -189,7 +189,89 @@ Para resolver o sistema de equações $\psi_{\boldsymbol{\beta}} = 0$ e $\psi_{\
 
 Toda metodologia do McGLM está implementada no pacote \emph{mcglm} \citep{mcglm} do software estatístico R \citep{softwareR}.
 
-\section{Testes de hipótese}
+\section{Testes de hipóteses}
+
+A palavra "inferir" significa tirar conclusão. O campo de estudo chamado de inferência estatística tem como objetivo o desenvolvimento e discussão de métodos e procedimentos que permitam, com certo grau de confiança, fazer afirmações sobre uma popupalação com base em informação amostral. Na prática, costuma ser inviável trabalhar com uma população. Assim, a alternativa usada é coletar uma amostra e utilizar esta amostra para tirar conclusões. Neste sentido, a inferência estatística fornece ferramentas para estudar quantidades populacionais (parâmetros) por meio de estimativas destas quantidades obtidas através da amostra.
+
+Contudo, é importante notar que diferentes amostras podem fornecer diferentes resultados. Por exemplo, se há interesse em estudar a média de determinada característica na população mas não há condições de se observar a característica em todas as unidades, usa-se uma amostra. E é totalmente plausível que diferentes amostras apresentem médias amostrais diferentes. Portanto, os métodos de inferência estatística sempre apresentarão determinado grau de incerteza. 
+
+Campos importantes da inferência estatística são a estimação de quantidades (por ponto e intervalo) e testes de hipóteses. O objetivo desta revisão é apresentar uma visão geral a respeito de testes de hipóteses estatísticas e os principais componentes. Mais sobre inferência estatística pode ser visto em \citet{barndorff2017}, \citet{silvey2017}, \citet{azzalini2017}, \citet{wasserman2013all}, entre outros.
+
+\subsection{Elementos de um teste de hipóteses}
+
+A atual teoria dos testes de hipóteses é resultado da combinação de trabalhos de R. A. Fisher, Jerzy Neyman and Egon Pearson em publicações como \citet{fisherarrangement}, \citet{fisher1929}, \citet{neyman2020use1}, \citet{neyman2020use2} e \citet{neyman1933ix}. Entende-se por hipótese estatística uma afirmação a respeito de um ou mais parâmetros (desconhecidos) que são estimados com base em uma amostra. Já um teste de hipóteses é o procedimento que permite responder perguntas como: com base na evidência amostral, podemos considerar que dado parâmetro é igual a determinado valor? Alguns dos componentes de um teste de hipóteses são: as hipóteses, a estatística de teste, a distribuição da estatística de teste, o nível de significância, o poder do teste, a região crítica e o p-valor.
+
+\textbf{Notação}
+
+\textbf{Hipótese nula e alternativa}
+
+\textbf{Estatística de teste}
+
+\textbf{Distribuição da estatística de teste}
+
+\textbf{Rejeição ou não rejeição de h0}
+
+\textbf{Elementos do teste}
+
+\textbf{Desfechos}
+
+\textbf{Nível de significância}
+
+\textbf{Poder do teste}
+
+\textbf{P-valor}
+
+\textbf{Região crítica}
+
+São postuladas 2 hipóteses, chamadas de nula e alternativa.
+
+Avalia-se uma estatística de teste.
+
+Com base no valor da estatística e de acordo com sua distribuição de probabilidade, toma-se a decisão de rejeitar ou não rejeitar a hipótese nula.
+
+Seja $\theta$ um parâmetro, um teste de hipóteses sobre $\theta$ é dado por:
+
+  $$
+\left\{\begin{matrix}
+H_0: \theta = \theta_0 \\ 
+H_1: \theta \neq \theta_0
+\end{matrix}\right.
+$$  
+
+desfechos possíveis
+
+  \begin{table}[]
+\begin{tabular}{l|cc}
+\hline
+\multicolumn{1}{c|}{}    & \textbf{Rejeita $H_0$} & \textbf{Não Rejeita $H_0$} \\ \hline
+\textbf{$H_0$ verdadeira} & Erro tipo I           & Decisão correta           \\
+\textbf{$H_0$ falsa}      & Decisão correta       & Erro tipo II              \\ \hline
+\end{tabular}
+\caption{Desfechos possíveis em um teste de hipóteses}
+\label{tab:my-table}
+\end{table}
+
+A probabilidade do erro do tipo I recebe o nome de nível de significância.
+
+A probabilidade de se rejeitar a hipótese nula quando a hipótese alternativa é verdadeira (rejeitar corretamente H 0 ) recebe o nome de poder do teste.
+
+A probabilidade de a estatística de teste tomar um valor igual ou mais extremo do que aquele que foi observado recebe o nome de p-valor.
+
+
+\subsection{Testes de hipótese em modelos de regressão}
+
+\textbf{Trv}
+
+\textbf{Wald} 
+
+\textbf{Escore}
+
+\textbf{Visao geral dos 3}
+
+\textbf{Outras possibilidades}
+
+
+
 
 \section{ANOVA e MANOVA}
 

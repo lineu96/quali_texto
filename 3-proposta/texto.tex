@@ -10,17 +10,19 @@
 
 O teste Wald é um teste de hipóteses amplamente difundido para análises de Modelos Lineares e Modelos Lineares Generalizados para verificar suposições sobre os parâmetros do modelo, isto é, verifcar se a estimativa do parâmetro é ou não estatísticamente igual a um valor qualquer.
 
-A grosso modo, é um teste que avalia a distância entre a estimativa do parâmetro e o valor postulado sob a hipótese nula. Esta diferença é ainda ponderada por uma medida de precisão da estimativa do parâmetro e, quanto mais distante de 0 for o valor da distância ponderada, menor é a chance da hipótese de igualdade ser verdadeira, ou seja, do valor postulado ser igual ao valor estimado.
+A grosso modo, é um teste que avalia a distância entre a estimativa do parâmetro e o valor postulado sob a hipótese nula. Esta diferença é ainda padronizada por uma medida de precisão da estimativa do parâmetro e, quanto mais distante de 0 for o valor da distância padronizada, menor é a chance da hipótese de igualdade ser verdadeira, ou seja, do valor postulado ser igual ao valor estimado.
 
 Além destes elementos o teste pressupõe que os estimadores dos parâmetros do modelo sigam distribuição assintótica Normal. Para avaliação da estatística de teste e verificação de significância estatística utiliza-se distribuição assintótica Qui-quadrado ($\chi^2$).
 
 Quando trabalhamos com modelos de regressão, estes tipos de teste são extremente úteis quando usados para avaliar o efeito das variáveis explicativas sobre a(s) variável(is) resposta do modelo. Por exemplo: se ajustarmos um modelo com uma variável resposta e uma variável explicativa numérica, vamos estimar um único parâmetro de regressão; este parâmetro associa a variável explicativa à variável resposta. Através de um teste de hipótese podemos avaliar o efeito desta variável explicativa, basta verificar se existe evidência que permita afirmar que o valor que associa as variáveis é igual a 0. 
 
-Existe também a possibilidade de formular hipóteses para mais de um parâmetro de regressão e ainda testar valores diferentes de 0, tudo depende do objetivo do estudo e do interesse do pesquisador. 
+Existe também a possibilidade de formular hipóteses para mais de um parâmetro de regressão e ainda testar valores diferentes de 0, tudo depende do objetivo do estudo.
 
 \subsection{Adaptação do teste para os McGLM}
 
-Quando trabalhamos na classe dos McGLM estimamos parâmetros de regressão, dispersão e potência. Os parâmetros de regressão são aqueles que associam a variável explicativa à variável resposta. Os parâmetros de dispersão estão associados ao preditor matricial e, em geral, cada matriz do preditor matricial diz respeito a uma estrutura de correlação existente entre as unidades amostrais do conjunto de dados, deste modo, os parâmetros de dispersão podem ser usados para avaliar se existe efeito da relação entre as unidades amostrais tal como foi especificado pelo preditor matricial. Já os parâmetros de potência nos fornecem um indicativo de qual distribuição de probabilidade melhor se adequa ao problema. 
+Quando trabalhamos na classe dos McGLMs estimamos parâmetros de regressão, dispersão e potência. 
+
+Os parâmetros de regressão são aqueles que associam a variável explicativa à variável resposta, os parâmetros de dispersão estão associados ao preditor matricial e os parâmetros de potência nos fornecem um indicativo de qual distribuição de probabilidade melhor se adequa ao problema. 
 
 Nossa adaptação do teste Wald tradicional visa uma forma de formular e testar hipóteses para todos esses parâmetros estimados na classe dos McGLM para responder questões comuns de analistas no contexto de modelagem, como: quais variáveis influenciam a resposta? Existe efeito da estrutura de correlação entre indivíduos no meu estudo? Qual a distribuição de probabilidade que melhor se adequa ao meu problema? Dentre outras.
 

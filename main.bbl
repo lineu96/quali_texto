@@ -11,6 +11,16 @@ Anderson, T. et~al. (1973).
   linear structure.
 \newblock {\em The Annals of Statistics}, 1(1):135--141.
 
+\bibitem[Azzalini, 2017]{azzalini2017}
+Azzalini, A. (2017).
+\newblock {\em Statistical inference: Based on the likelihood}.
+\newblock Routledge.
+
+\bibitem[Barndorff-Nielsen e Cox, 2017]{barndorff2017}
+Barndorff-Nielsen, O.~E. e Cox, D.~R. (2017).
+\newblock {\em Inference and asymptotics}.
+\newblock Routledge.
+
 \bibitem[Bonat, 2018]{mcglm}
 Bonat, W.~H. (2018).
 \newblock Multiple response variables regression models in {R}: The {mcglm}
@@ -59,6 +69,17 @@ Evans, G. e Savin, N.~E. (1982).
 Fisher, R.~A. (1925).
 \newblock Statistical methods for research workers. oliver and boyd.
 \newblock {\em Edinburgh, Scotland}, 6.
+
+\bibitem[Fisher, 1929]{fisher1929}
+Fisher, R.~A. (1929).
+\newblock The statistical method in psychical research.
+\newblock Em {\em Proceedings of the Society for Psychical Research},
+  volume~39, p\'aginas 189--192.
+
+\bibitem[Fisher, 1992]{fisherarrangement}
+Fisher, R.~A. (1992).
+\newblock The arrangement of field experiments.
+\newblock Em {\em Breakthroughs in statistics}, p\'aginas 82--91. Springer.
 
 \bibitem[Fisher e Mackenzie, 1923]{anova_fisher}
 Fisher, R.~A. e Mackenzie, W.~A. (1923).
@@ -189,6 +210,26 @@ Neyman, J. e Pearson, E.~S. (1928b).
   of statistical inference: Part ii.
 \newblock {\em Biometrika}, p\'aginas 263--294.
 
+\bibitem[Neyman e Pearson, 1933]{neyman1933ix}
+Neyman, J. e Pearson, E.~S. (1933).
+\newblock Ix. on the problem of the most efficient tests of statistical
+  hypotheses.
+\newblock {\em Philosophical Transactions of the Royal Society of London.
+  Series A, Containing Papers of a Mathematical or Physical Character},
+  231(694-706):289--337.
+
+\bibitem[Neyman e Pearson, 2020a]{neyman2020use1}
+Neyman, J. e Pearson, E.~S. (2020a).
+\newblock {\em On the use and interpretation of certain test criteria for
+  purposes of statistical inference. Part I.}
+\newblock University of California Press.
+
+\bibitem[Neyman e Pearson, 2020b]{neyman2020use2}
+Neyman, J. e Pearson, E.~S. (2020b).
+\newblock {\em On the use and interpretation of certain test criteria for
+  purposes of statistical inference. Part II.}
+\newblock University of California Press.
+
 \bibitem[Paula, 2004]{paula}
 Paula, G.~A. (2004).
 \newblock {\em Modelos de regress{\~a}o: com apoio computacional}.
@@ -248,6 +289,11 @@ Silvey, S.~D. (1959).
 \newblock The lagrangian multiplier test.
 \newblock {\em The Annals of Mathematical Statistics}, 30(2):389--407.
 
+\bibitem[Silvey, 2017]{silvey2017}
+Silvey, S.~D. (2017).
+\newblock {\em Statistical inference}.
+\newblock Routledge.
+
 \bibitem[Smith et~al., 1962]{manova}
 Smith, H., Gnanadesikan, R.  e Hughes, J. (1962).
 \newblock Multivariate analysis of variance (manova).
@@ -264,6 +310,11 @@ Wald, A. (1943).
   the number of observations is large.
 \newblock {\em Transactions of the American Mathematical society},
   54(3):426--482.
+
+\bibitem[Wasserman, 2013]{wasserman2013all}
+Wasserman, L. (2013).
+\newblock {\em All of statistics: a concise course in statistical inference}.
+\newblock Springer Science \& Business Media.
 
 \bibitem[Weihs e Ickstadt, 2018]{weihs2018data}
 Weihs, C. e Ickstadt, K. (2018).

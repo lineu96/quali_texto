@@ -10,19 +10,21 @@
 \contentsline {subsection}{\numberline {2.1.2}Modelo de covari\IeC {\^a}ncia linear generalizada}{14}{subsection.12}
 \contentsline {subsection}{\numberline {2.1.3}Modelos multivariados de covari\IeC {\^a}ncia linear generalizada}{15}{subsection.14}
 \contentsline {subsection}{\numberline {2.1.4}Estima\IeC {\c c}\IeC {\~a}o e infer\IeC {\^e}ncia}{16}{subsection.17}
-\contentsline {section}{\numberline {2.2}Testes de hip\IeC {\'o}tese}{17}{section.27}
-\contentsline {section}{\numberline {2.3}ANOVA e MANOVA}{17}{section.28}
-\contentsline {chapter}{\numberline {3}Proposta}{18}{chapter.29}
-\contentsline {section}{\numberline {3.1}Teste Wald no contexto dos McGLM}{18}{section.30}
-\contentsline {subsection}{\numberline {3.1.1}O teste Wald}{18}{subsection.31}
-\contentsline {subsection}{\numberline {3.1.2}Adapta\IeC {\c c}\IeC {\~a}o do teste para os McGLM}{18}{subsection.32}
-\contentsline {subsection}{\numberline {3.1.3}Exemplos de hip\IeC {\'o}teses}{19}{subsection.35}
-\contentsline {subsection}{\numberline {3.1.4}Exemplo 1}{20}{subsection.37}
-\contentsline {subsection}{\numberline {3.1.5}Exemplo 2}{21}{subsection.40}
-\contentsline {subsection}{\numberline {3.1.6}Exemplo 3}{22}{subsection.43}
-\contentsline {subsection}{\numberline {3.1.7}ANOVA e MANOVA via teste Wald}{22}{subsection.45}
-\contentsline {chapter}{\numberline {4}Resultados preliminares}{24}{chapter.46}
-\contentsline {section}{\numberline {4.1}Fun\IeC {\c c}\IeC {\~o}es implementadas}{24}{section.47}
-\contentsline {chapter}{\numberline {5}Cronograma}{29}{chapter.62}
-\contentsline {chapter}{REFER\^ENCIAS}{30}{chapter*.63}
+\contentsline {section}{\numberline {2.2}Testes de hip\IeC {\'o}teses}{17}{section.27}
+\contentsline {subsection}{\numberline {2.2.1}Elementos de um teste de hip\IeC {\'o}teses}{18}{subsection.28}
+\contentsline {subsection}{\numberline {2.2.2}Testes de hip\IeC {\'o}tese em modelos de regress\IeC {\~a}o}{19}{subsection.30}
+\contentsline {section}{\numberline {2.3}ANOVA e MANOVA}{19}{section.31}
+\contentsline {chapter}{\numberline {3}Proposta}{20}{chapter.32}
+\contentsline {section}{\numberline {3.1}Teste Wald no contexto dos McGLM}{20}{section.33}
+\contentsline {subsection}{\numberline {3.1.1}O teste Wald}{20}{subsection.34}
+\contentsline {subsection}{\numberline {3.1.2}Adapta\IeC {\c c}\IeC {\~a}o do teste para os McGLM}{20}{subsection.35}
+\contentsline {subsection}{\numberline {3.1.3}Exemplos de hip\IeC {\'o}teses}{21}{subsection.38}
+\contentsline {subsection}{\numberline {3.1.4}Exemplo 1}{22}{subsection.40}
+\contentsline {subsection}{\numberline {3.1.5}Exemplo 2}{23}{subsection.43}
+\contentsline {subsection}{\numberline {3.1.6}Exemplo 3}{23}{subsection.46}
+\contentsline {subsection}{\numberline {3.1.7}ANOVA e MANOVA via teste Wald}{24}{subsection.48}
+\contentsline {chapter}{\numberline {4}Resultados preliminares}{26}{chapter.49}
+\contentsline {section}{\numberline {4.1}Fun\IeC {\c c}\IeC {\~o}es implementadas}{26}{section.50}
+\contentsline {chapter}{\numberline {5}Cronograma}{31}{chapter.65}
+\contentsline {chapter}{REFER\^ENCIAS}{32}{chapter*.66}
 \contentsfinish 
