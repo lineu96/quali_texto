@@ -2,11 +2,7 @@
 
 \label{cap:literatura}
 
-Nossa revisão de literatura aborda predominantemente três temas. O primeiro deles é uma revisão da estrutura geral e estimação dos parâmetros de um modelo multivariado de covariância linear generalizada, baseado nas ideias de \citet{Bonat16}. 
-
-A segunda parte da revisão de literatura diz respeito ao procedimento chamado teste de hipóteses com o foco de tratar do objetivo, notação, componentes, aplicação deste tipo de procedimento no contexto de modelos de regressão e ainda quais os testes mais comuns.
-
-Por fim, a última parte da revisão diz respeito às análises de variância, que podem ser vistos como procedimentos baseados em testes de hipóteses sequenciais para avaliar os parâmetros de um modelo de regressão.
+Nossa revisão de literatura aborda predominantemente três temas. O primeiro deles é uma revisão da estrutura geral e estimação dos parâmetros de um modelo multivariado de covariância linear generalizada, baseado nas ideias de \citet{Bonat16}. A segunda parte da revisão de literatura diz respeito ao procedimento chamado teste de hipóteses com o foco de tratar do objetivo, notação, componentes, aplicação deste tipo de procedimento no contexto de modelos de regressão e ainda quais os testes mais comuns. Por fim, a última parte da revisão diz respeito às análises de variância, que podem ser vistos como procedimentos baseados em testes de hipóteses sequenciais para avaliar os parâmetros de um modelo de regressão.
 
 \section{Modelos Multivariados de Covariância Linear Generalizada}
 
@@ -191,7 +187,7 @@ Toda metodologia do McGLM está implementada no pacote \emph{mcglm} \citep{mcglm
 
 \section{Testes de hipóteses}
 
-A palavra "inferir" significa tirar conclusão. O campo de estudo chamado de inferência estatística tem como objetivo o desenvolvimento e discussão de métodos e procedimentos que permitam, com certo grau de confiança, fazer afirmações sobre uma popupalação com base em informação amostral. Na prática, costuma ser inviável trabalhar com uma população. Assim, a alternativa usada é coletar uma amostra e utilizar esta amostra para tirar conclusões. Neste sentido, a inferência estatística fornece ferramentas para estudar quantidades populacionais (parâmetros) por meio de estimativas destas quantidades obtidas através da amostra.
+A palavra "inferir" significa tirar conclusão. O campo de estudo chamado de inferência estatística tem como objetivo o desenvolvimento e discussão de métodos e procedimentos que permitem, com certo grau de confiança, fazer afirmações sobre uma popupalação com base em informação amostral. Na prática, costuma ser inviável trabalhar com uma população. Assim, a alternativa usada é coletar uma amostra e utilizar esta amostra para tirar conclusões. Neste sentido, a inferência estatística fornece ferramentas para estudar quantidades populacionais (parâmetros) por meio de estimativas destas quantidades obtidas através da amostra.
 
 Contudo, é importante notar que diferentes amostras podem fornecer diferentes resultados. Por exemplo, se há interesse em estudar a média de determinada característica na população mas não há condições de se observar a característica em todas as unidades, usa-se uma amostra. E é totalmente plausível que diferentes amostras apresentem médias amostrais diferentes. Portanto, os métodos de inferência estatística sempre apresentarão determinado grau de incerteza. 
 
@@ -199,48 +195,33 @@ Campos importantes da inferência estatística são a estimação de quantidades
 
 \subsection{Elementos de um teste de hipóteses}
 
-A atual teoria dos testes de hipóteses é resultado da combinação de trabalhos de R. A. Fisher, Jerzy Neyman and Egon Pearson em publicações como \citet{fisherarrangement}, \citet{fisher1929}, \citet{neyman2020use1}, \citet{neyman2020use2} e \citet{neyman1933ix}. Entende-se por hipótese estatística uma afirmação a respeito de um ou mais parâmetros (desconhecidos) que são estimados com base em uma amostra. Já um teste de hipóteses é o procedimento que permite responder perguntas como: com base na evidência amostral, podemos considerar que dado parâmetro é igual a determinado valor? Alguns dos componentes de um teste de hipóteses são: as hipóteses, a estatística de teste, a distribuição da estatística de teste, o nível de significância, o poder do teste, a região crítica e o p-valor.
+A atual teoria dos testes de hipóteses é resultado da combinação de  trabalhos conduzidos predominantemente na década de 1920 por Ronald Fisher, Jerzy Neyman e Egon Pearson em publicações como \citet{fisherarrangement}, \citet{fisher1929}, \citet{neyman2020use1}, \citet{neyman2020use2} e \citet{neyman1933ix}. 
 
-\textbf{Notação}
+Entende-se por hipótese estatística uma afirmação a respeito de um ou 
+mais parâmetros (desconhecidos) que são estimados com base em uma amostra. Já um teste de hipóteses é o procedimento que permite responder perguntas como: com base na evidência amostral, podemos considerar que dado parâmetro é igual a determinado valor? Alguns dos componentes de um teste de hipóteses são: as hipóteses, a estatística de teste, a distribuição da estatística de teste, o nível de significância, o poder do teste, a região crítica e o p-valor.
 
-\textbf{Hipótese nula e alternativa}
+Para definição dos elementos necessários para condução de um teste de hipóteses, considere que uma amostra foi tomada com o intuito de estudar determinada característica de uma população. Considere $\hat{\theta}$ a estimativa de um parâmetro $\theta$ da população. Neste contexto, uma hipótese estatística é uma afirmação a respeito do valor do parâmetro $\theta$ que é estudado através da estimativa $\hat{\theta}$ a fim de concluir algo sobre a população de interesse.
 
-\textbf{Estatística de teste}
+Na prática, sempre são definidas duas hipóteses de interesse. A primeira 
+delas é chamada de hipótese nula ($H_0$) e trata-se da hipótese de que
+o valor de um parâmetro populacional é igual a algum valor especificado. A segunda hipótese é chamada de hipótese alternativa ($H_1$) e trata-se da hipótese de que o parâmetro tem um valor diferente daquele especificado na hipótese nula. Deste modo, através do estudo da quantidade $\hat{\theta}$ verificamos a plausibilidade de se afirmar que $\theta$ é igual a um valor $\theta_0$. Portanto, três tipos de hipóteses podem ser especificadas:
 
-\textbf{Distribuição da estatística de teste}
+\begin{enumerate}
 
-\textbf{Rejeição ou não rejeição de h0}
+  \item $H_0: \theta = \theta_0 \, \, vs \, \, H_1: \theta \neq \theta_0$.
+  
+  \item $H_0: \theta = \theta_0 \, \, vs \, \, H_1: \theta >  \theta_0$.
+  
+  \item $H_0: \theta = \theta_0 \, \, vs \, \, H_1: \theta < \theta_0$.
+  
+\end{enumerate}
 
-\textbf{Elementos do teste}
+Com as hipóteses definidas, dois resultados são possíveis em termos de $H_0$: rejeição ou não rejeição. O uso do termo "aceitar" a hipótese nula não é recomendado tendo em vista que a decisão a favor ou contra a hipótese se dá por meio de informação amostral. Ainda, por se tratar de um procedimento baseado em informação amostral, existe um risco associado a decisões equivocadas. Os possíveis desfechos de um teste de hipóteses estão descritos na \autoref{tab:desfechos}, que mostra que existem dois casos nos quais toma-se uma decisão equivocada. Em uma delas rejeita-se uma hipótese nula  verdadeira (erro do tipo I) e na outra não rejeita-se uma hipótese nula falsa (erro do tipo II). 
 
-\textbf{Desfechos}
+A probabilidade do erro do tipo I é denotado por $\alpha$ e chamada de nível de significância, já a probabilidade do erro do tipo II é denotado por $\beta$. O cenário ideal é aquele que minimiza tanto $\alpha$ quanto $\beta$, contudo, em geral, à medida que $\alpha$ reduz, $\beta$ tende a aumentar. Por este motivo busca-se controlar o erro do tipo I. Além disso temos que a probabilidade de se rejeitar a hipótese nula quando a hipótese alternativa é verdadeira (rejeitar corretamente $H_0$) recebe o nome de poder do teste.
 
-\textbf{Nível de significância}
-
-\textbf{Poder do teste}
-
-\textbf{P-valor}
-
-\textbf{Região crítica}
-
-São postuladas 2 hipóteses, chamadas de nula e alternativa.
-
-Avalia-se uma estatística de teste.
-
-Com base no valor da estatística e de acordo com sua distribuição de probabilidade, toma-se a decisão de rejeitar ou não rejeitar a hipótese nula.
-
-Seja $\theta$ um parâmetro, um teste de hipóteses sobre $\theta$ é dado por:
-
-  $$
-\left\{\begin{matrix}
-H_0: \theta = \theta_0 \\ 
-H_1: \theta \neq \theta_0
-\end{matrix}\right.
-$$  
-
-desfechos possíveis
-
-  \begin{table}[]
+\begin{table}[h]
+\centering
 \begin{tabular}{l|cc}
 \hline
 \multicolumn{1}{c|}{}    & \textbf{Rejeita $H_0$} & \textbf{Não Rejeita $H_0$} \\ \hline
@@ -248,17 +229,42 @@ desfechos possíveis
 \textbf{$H_0$ falsa}      & Decisão correta       & Erro tipo II              \\ \hline
 \end{tabular}
 \caption{Desfechos possíveis em um teste de hipóteses}
-\label{tab:my-table}
+\label{tab:desfechos}
 \end{table}
 
-A probabilidade do erro do tipo I recebe o nome de nível de significância.
+A decisão acerca da rejeição ou não rejeição de $H_0$ se dá por meio da avaliação de uma estatística de teste, uma região crítica e um valor crítico. A estatística de teste é o valor utilizado para se tomar a decisão de rejeitar ou não rejeitar a hipótese nula. Trata-se de uma quantidade obtida através de operações da estimativa do parâmetro. Esta estatística segue uma distribuição de probabilidade e esta distribuição é usada para definir a região e o valor crítico.
 
-A probabilidade de se rejeitar a hipótese nula quando a hipótese alternativa é verdadeira (rejeitar corretamente H 0 ) recebe o nome de poder do teste.
+Considerando a distribuição da estatística de teste, a região crítica consiste do conjunto de valores nos quais rejeita-se a hipótese nula. Já o valor crítico é o valor que divide a área de rejeição da área de não rejeição de $H_0$. Caso a estatística de teste esteja dentro da região crítica, significa que as evidências amostrais apontam para a rejeição de $H_0$. Por outro lado, se a estatística de teste estiver fora da região crítica, quer dizer que os dados apontam para uma não rejeição de $H_0$. O já mencionado nível de significância ($\alpha$) tem importante papel no processo, pois trata-se de um valor fixado e, reduzindo o nível de significância, torna-se cada vez mais difícil rejeitar a hipótese nula.
 
-A probabilidade de a estatística de teste tomar um valor igual ou mais extremo do que aquele que foi observado recebe o nome de p-valor.
+O último conceito importante para compreensão do procedimento geral de  testes de hipóteses é chamado de nível descritivo, p-valor ou ainda $\alpha^*$. Basicamente, trata-se da probabilidade de a estatística de teste tomar um valor igual ou mais extremo do que aquele que foi observado, supondo que a hipótese nula é verdadeira. Deste modo, o p-valor pode ser visto como uma quantidade que fornece informação quanto ao grau que os dados vão contra a hipótese nula. Esta quantidade pode ainda ser utilizada como parte da regra decisão, uma vez que um p-valor menor que o nível de significância sugere que há evidência nos dados em favor da rejeição da hipótese nula.
 
+Assim, o procedimento geral para condução de um teste de hipóteses 
+consiste em: 
+
+\begin{enumerate}
+  
+  \item Definir $H_0$ e $H_1$.
+  
+  \item Identificar o teste a ser efetuado, sua estatística de teste e 
+distribuição.
+  
+  \item Obter as quantidades necessárias para o cálculo da estatística de teste.
+  
+  \item Fixar o nível de significância.
+  
+  \item Definir o valor e a região crítica.
+  
+  \item Confrontar o valor e região crítica com a estatística de teste.
+  
+  \item Obter o p-valor.
+  
+  \item Concluir pela rejeição ou não rejeição da hipótese nula.
+  
+\end{enumerate}
 
 \subsection{Testes de hipótese em modelos de regressão}
+
+\textbf{contexto geral}
 
 \textbf{Trv}
 
@@ -269,8 +275,6 @@ A probabilidade de a estatística de teste tomar um valor igual ou mais extremo 
 \textbf{Visao geral dos 3}
 
 \textbf{Outras possibilidades}
-
-
 
 
 \section{ANOVA e MANOVA}
