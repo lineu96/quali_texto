@@ -264,20 +264,44 @@ distribuição.
 
 \subsection{Testes de hipótese em modelos de regressão}
 
-\textbf{contexto geral}
+Em modelos de regressão modela-se parâmetros de distribuições de probabilidade como uma função de outras variáveis. Basicamente, o parâmetro de interesse é reescrito como uma combinação linear de novos parâmetros associados a vetores numéricos que contém o valor de variáveis explicativas.
 
-\textbf{Trv}
+Os parâmetros desta combinação linear são estimados com base nos dados e, como estão associados a variáveis explicativas, pode ser de interesse verificar se a retirada de uma ou mais variáveis do modelo gera um modelo significativamente pior que o original. Em outros termos, uma hipótese de interesse costuma ser verificar se há evidência suficiente nos dados para afirmar que determinada variável explicativa não possui efeito sobre a resposta.
 
-\textbf{Wald} 
+Neste contexto, testes de hipóteses são amplamente empregados, sendo que, quando se trata de modelos de regressão, três testes são usualmente utilizados: o teste da razão de verossimilhanças, o teste Wald e o teste multiplicador de lagrange, também conhecido como teste escore. \citet{engle} descreve a formulação geral dos três testes.
 
-\textbf{Escore}
+O teste da razão de verossimilhanças \citep{trv} busca comparar a  verossimilhança de dois modelos ajustados: um deles com todas as variáveis explicativas e outro sem alguma ou algumas destas variáveis. O obsetivo consiste em verificar se a diferença entre estas verossimilhanças sugere que a retirada das variáveis não gera um modelo pior.
 
-\textbf{Visao geral dos 3}
+O teste Wald \citep{wald} necessita de apenas um modelo e avalia-se o quão distante, com base na verossimilhança, o valor estimado está de valor postulado, isto é, um valor sob hipótese nula. Em geral testa-se o quão distante a estimativa do parâmetro de interesse está de zero, contudo pode-se executar o teste utilizando outros valores.
 
-\textbf{Outras possibilidades}
+O teste do multiplicador de lagrange ou teste score \citep{score1}, \citep{score2}, \citep{score3} também requer apenas um modelo ajustado. Contudo este modelo não possui determinadas variáveis explicativas e estima-se, com base na inclinação da função de verossimilhança se a adição destas variáveis ao modelo gera uma melhora significativa.
 
+Com isto, apresentamos nesta seção uma visão geral destes três testes com suas características, hipóteses, estatísticas de teste, similaridades e ainda outras opções que cumprem o mesmo papel.
+
+\subsection{Teste da razão de verossimilhanças}
+
+Hipóteses e estatística de teste
+
+\subsection{Teste Wald}
+
+Hipóteses e estatística de teste
+
+\subsection{Teste Escore}
+
+Hipóteses e estatística de teste
+
+\subsection{Visão geral e outras possibilidades}
+
+Os três testes podem ser usados para verificar se a retirada de determinada variável do modelo prejudica o ajuste. 
+
+No caso do teste de razão de verossimilhanças, dois modelos precisam ser ajustados. Já o teste Wald e o escore necessitam de apenas um modelo. 
+
+Os testes são assintóticamente equivalentes. 
+
+Em amostras finitas estes testes podem apresentar resultados diferentes como discutido por \citet{conflict}.
+
+\textbf{acrescentar representação lúdica do comportamento dos testes}
+
+\textbf{escrever sobre outras possibilidades para testar significância de parâmetros em modelo de regressão}
 
 \section{ANOVA e MANOVA}
-
-
-
