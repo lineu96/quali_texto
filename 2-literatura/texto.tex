@@ -14,7 +14,7 @@ Vamos discutir os McGLMs como uma extensão dos GLMs. Vale ressaltar que é usad
 
 \subsection{Modelo linear generalizado}
 
-Para definição da extensão de um modelo linear generalizdo (GLM descrita em \citet{Bonat16}, considere $\boldsymbol{Y}$ um vetor $N \times 1$ de valores observados da variável resposta, $\boldsymbol{X}$ uma matriz de delineamento $N \times k$ e $\boldsymbol{\beta}$ um vetor de parâmetros de regressão $k \times 1$. Com isso, um GLM pode ser escrito da seguinte forma 
+Para definição da extensão de um modelo linear generalizdo (GLM) apresentada por \citet{Bonat16}, considere $\boldsymbol{Y}$ um vetor $N \times 1$ de valores observados da variável resposta, $\boldsymbol{X}$ uma matriz de delineamento $N \times k$ e $\boldsymbol{\beta}$ um vetor de parâmetros de regressão $k \times 1$. Com isso, um GLM pode ser escrito da seguinte forma 
 
 \begin{equation}
 \label{eq:glm}
@@ -270,7 +270,7 @@ Os parâmetros desta combinação linear são estimados com base nos dados e, co
 
 Neste contexto, testes de hipóteses são amplamente empregados, sendo que, quando se trata de modelos de regressão, três testes são usualmente utilizados: o teste da razão de verossimilhanças, o teste Wald e o teste multiplicador de lagrange, também conhecido como teste escore. \citet{engle} descreve a formulação geral dos três testes.
 
-O teste da razão de verossimilhanças \citep{trv} busca comparar a  verossimilhança de dois modelos ajustados: um deles com todas as variáveis explicativas e outro sem alguma ou algumas destas variáveis. O obsetivo consiste em verificar se a diferença entre estas verossimilhanças sugere que a retirada das variáveis não gera um modelo pior.
+O teste da razão de verossimilhanças \citep{trv} busca comparar a  verossimilhança de dois modelos ajustados: um deles com todas as variáveis explicativas e outro sem alguma ou algumas destas variáveis. O objetivo consiste em verificar se a diferença entre estas verossimilhanças sugere que a retirada das variáveis não gera um modelo pior.
 
 O teste Wald \citep{wald} necessita de apenas um modelo e avalia-se o quão distante, com base na verossimilhança, o valor estimado está de valor postulado, isto é, um valor sob hipótese nula. Em geral testa-se o quão distante a estimativa do parâmetro de interesse está de zero, contudo pode-se executar o teste utilizando outros valores.
 
@@ -280,25 +280,69 @@ Com isto, apresentamos nesta seção uma visão geral destes três testes com su
 
 \subsection{Teste da razão de verossimilhanças}
 
-Hipóteses e estatística de teste
+Considere dois modelos de regressão ajustados para os quais as estimativas dos parâmetros foram obtidas por meio da maximização da função de verossimilhança. O primeiro destes modelos ($M_1$) é chamado de modelo irrestrito, isto é, com todas as variáveis explicativas. Já o segundo modelo ($M_0$) é chamado de modelo restrito, isto é, sem alguma(s) da(s) variável(is) explicativa(s). Considere que $M_0$ possui $q$ parâmetros a menos que $M_1$.
+
+Denotamos $L_1$ a verossimilhança do modelo $M_1$ e $L_0$ a verossimilhança do modelo $M_0$, ou seja, as verossimilhanças dos modelos restrito e irrestrito. Com isso, o teste consiste em verificar se a diferença entre as verossimilhanças dos modelos é grande ao ponto de afirmar que a retirada das variáveis tal como feita no modelo restrito gera um modelo com pior ajuste.
+
+A razão $L_0$/$L_1$ resulta em um valor que sempre estará entre 0 e 1. Quanto mais próxima de 1 for esta razão, maior é a evidência a favor da hipótese que a verossimilhança dos modelos não difere. Com isso em mente, caso tivermos em mãos dois modelos ajustados, um deles com um número de maior de parâmetros e outro com número menor com verossimilhança próxima, deve-se optar pelo modelo menor.
+
+Se denotarmos por $\boldsymbol{\beta}$ um vetor de parâmetros de regressão e $\boldsymbol{0}$ o vetor nulo. As hipóteses a serem testadas podem ser descritas como:
+
+$$
+H_0: \boldsymbol{\beta} = \boldsymbol{0} \: \:  vs \: \:  H_1: \boldsymbol{\beta} \neq \boldsymbol{0},
+$$
+
+\noindent a estatística de teste é dada por:
+
+$$
+LRT = -2log\left ( L_0/L_1 \right ),
+$$
+
+\noindent em que LRT $\sim \chi^2_q$. É possível notar que quanto menor for a razão de verossimilhanças maior será a estatística de teste, ou seja, mais provável será a rejeição de $H_0$ pois $L_0$ e $L_1$ se afastam.
 
 \subsection{Teste Wald}
 
-Hipóteses e estatística de teste
+Considere um único modelo de regressão ajustado com $p$ parâmetros obtidas por meio da maximização da função de verossimilhança. $\boldsymbol{\beta}$ representa o vetor de parâmetros de regressão deste modelo, em que as estimativas são dadas por $\boldsymbol{\hat\beta}$.
+
+O teste Wald avalia a distância entre as estimativas dos parâmetros e um conjunto de valores postulados. Esta diferença é ainda padronizada por medidas de precisão das estimativas do parâmetros testados. Quanto mais distante de 0 for o valor da distância padronizada, menores são as evidências a favor da hipótese de que os valores estimados são iguais aos valores postulados.
+
+Com isso, a ideia do teste consiste em verificar se existe evidência suficiente nos dados para afirmar que um ou mais parâmetros são iguais a valores especificados. Em geral, os valores especificados se tratam de um vetor nulo para verificar se há evidência para afirmar que os valores dos parâmetros são iguais a 0, contudo existe a possibilidade de especificar hipóteses para qualquer valor.
+
+Para definir as hipóteses do teste Wald, considere que há interesse em testar $q$ restrições ao modelo original, isto é, há interesse em avaliar $q$ dos $p$ parâmetros originais. As hipóteses são especificadas por meio de uma matriz $\boldsymbol{L}$ de dimensão $qxp$ e um vetor $\boldsymbol{c}$ de valores postulados de dimensão $q$. Com base nestes elementos, as hipóteses podem ser descritas como:
+
+$$
+H_0: \boldsymbol{L}\boldsymbol{\beta} = \boldsymbol{c} \: \:  vs \: \:  H_1: \boldsymbol{L}\boldsymbol{\beta} \neq \boldsymbol{c},
+$$
+
+\noindent a estatística de teste é dada por:
+
+$$
+WT = (\boldsymbol{L\hat\beta} - \boldsymbol{c})^T \ (\boldsymbol{L \ Var^{-1}(\hat\beta) \ L^T})^{-1} \ (\boldsymbol{L\hat\beta} - \boldsymbol{c}),
+$$
+
+\noindent em que $WT \sim \chi^2_q$. Note que a estatística de teste necessita de elementos que devem ser especificados pelo pesquisador e quantidades facilmente obtidas após ajuste do modelo: as estimativas dos parâmetros e a matriz de variância e covariância dos mesmos.
 
 \subsection{Teste Escore}
 
-Hipóteses e estatística de teste
+Considere um único modelo de regressão ajustado com $p$ parâmetros obtidas por meio da maximização da função de verossimilhança. $\boldsymbol{\beta}$ representa o vetor de parâmetros de regressão deste modelo, em que as estimativas são dadas por $\boldsymbol{\hat\beta}$.
+
+O teste do multiplicador de lagrange ou teste escore, tal como o teste Wald, requer apenas um modelo ajustado. No caso do teste escore o modelo ajustado não possui o parâmetro de interesse e o que é feito é testar se adicionar esta variável omitida resultará em uma melhora significativa no modelo. Isto é feito com base na inclinação da função de verossimilhança.
+
+As hipóteses do teste são dadas por:
+
+$$
+H_0: \boldsymbol{\beta} = \boldsymbol{0} \: \: vs \: \: H_1: \boldsymbol{\beta} \neq \boldsymbol{0},
+$$
+
+\noindent a estatística de teste é dada por:
+
+$$ LMT = \boldsymbol{S^{'}(\hat\beta}) \ \boldsymbol{Var(\hat\beta)} \ \boldsymbol{S(\hat\beta}),$$
+
+em que $S(\hat\beta)$ representa a função escore e $\boldsymbol{Var(\hat\beta)}$ a matriz de variâncias avaliadas sob o modelo restrito ($H_0$). $WT \sim \chi^2_q$, em que $q$ representa o número de parâmetros fixados sob $H_0$.
 
 \subsection{Visão geral e outras possibilidades}
 
-Os três testes podem ser usados para verificar se a retirada de determinada variável do modelo prejudica o ajuste. 
-
-No caso do teste de razão de verossimilhanças, dois modelos precisam ser ajustados. Já o teste Wald e o escore necessitam de apenas um modelo. 
-
-Os testes são assintóticamente equivalentes. 
-
-Em amostras finitas estes testes podem apresentar resultados diferentes como discutido por \citet{conflict}.
+Como apresentado, os três testes podem ser usados para verificar se a retirada de determinada variável do modelo prejudica o ajuste. No caso do teste de razão de verossimilhanças, dois modelos encaixados precisam ser ajustados a fim de verificar a diferença entre eles. Já o teste Wald e o escore necessitam de apenas um modelo. Além disso os testes são assintóticamente equivalentes. Em amostras finitas estes testes podem apresentar resultados diferentes como discutido por \citet{conflict}.
 
 \textbf{acrescentar representação lúdica do comportamento dos testes}
 
