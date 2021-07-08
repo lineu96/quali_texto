@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {2.2.3}Teste da raz\IeC {\~a}o de verossimilhan\IeC {\c c}as}{21}{subsection.42}
 \contentsline {subsection}{\numberline {2.2.4}Teste Wald}{21}{subsection.43}
 \contentsline {subsection}{\numberline {2.2.5}Teste Escore}{22}{subsection.44}
-\contentsline {subsection}{\numberline {2.2.6}Vis\IeC {\~a}o geral e outras possibilidades}{23}{subsection.45}
+\contentsline {subsection}{\numberline {2.2.6}Vis\IeC {\~a}o geral}{23}{subsection.45}
 \contentsline {section}{\numberline {2.3}ANOVA e MANOVA}{24}{section.47}
 \contentsline {chapter}{\numberline {3}Proposta}{25}{chapter.48}
 \contentsline {subsection}{\numberline {3.0.1}Hip\IeC {\'o}teses e estat\IeC {\'\i }stica de teste}{26}{subsection.49}
