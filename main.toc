@@ -15,17 +15,21 @@
 \contentsline {subsection}{\numberline {2.2.2}Testes de hip\IeC {\'o}tese em modelos de regress\IeC {\~a}o}{20}{subsection.41}
 \contentsline {subsection}{\numberline {2.2.3}Teste da raz\IeC {\~a}o de verossimilhan\IeC {\c c}as}{21}{subsection.42}
 \contentsline {subsection}{\numberline {2.2.4}Teste Wald}{21}{subsection.43}
-\contentsline {subsection}{\numberline {2.2.5}Teste Escore}{22}{subsection.44}
+\contentsline {subsection}{\numberline {2.2.5}Teste escore}{22}{subsection.44}
 \contentsline {subsection}{\numberline {2.2.6}Vis\IeC {\~a}o geral}{23}{subsection.45}
 \contentsline {section}{\numberline {2.3}ANOVA e MANOVA}{24}{section.47}
-\contentsline {chapter}{\numberline {3}Proposta}{25}{chapter.48}
-\contentsline {subsection}{\numberline {3.0.1}Hip\IeC {\'o}teses e estat\IeC {\'\i }stica de teste}{26}{subsection.49}
-\contentsline {subsection}{\numberline {3.0.2}Exemplo 1: hip\IeC {\'o}tese de igualdade para um \IeC {\'u}nico par\IeC {\^a}metro}{27}{subsection.53}
-\contentsline {subsection}{\numberline {3.0.3}Exemplo 2: hip\IeC {\'o}tese de igualdade para m\IeC {\'u}ltiplos par\IeC {\^a}metros}{27}{subsection.56}
-\contentsline {subsection}{\numberline {3.0.4}Exemplo 3: hip\IeC {\'o}tese de igualdade de par\IeC {\^a}metros}{28}{subsection.59}
-\contentsline {subsection}{\numberline {3.0.5}ANOVA e MANOVA via teste Wald}{29}{subsection.61}
-\contentsline {chapter}{\numberline {4}Resultados preliminares}{30}{chapter.62}
-\contentsline {section}{\numberline {4.1}Fun\IeC {\c c}\IeC {\~o}es implementadas}{30}{section.63}
-\contentsline {chapter}{\numberline {5}Cronograma}{35}{chapter.78}
-\contentsline {chapter}{REFER\^ENCIAS}{36}{chapter*.79}
+\contentsline {chapter}{\numberline {3}Proposta: teste Wald em modelos multivariados de covari\IeC {\^a}ncia linear generalizada}{25}{chapter.48}
+\contentsline {section}{\numberline {3.1}Hip\IeC {\'o}teses e estat\IeC {\'\i }stica de teste}{26}{section.49}
+\contentsline {subsection}{\numberline {3.1.1}Exemplo 1: hip\IeC {\'o}tese para um \IeC {\'u}nico par\IeC {\^a}metro}{27}{subsection.53}
+\contentsline {subsection}{\numberline {3.1.2}Exemplo 2: hip\IeC {\'o}tese para m\IeC {\'u}ltiplos par\IeC {\^a}metros}{28}{subsection.56}
+\contentsline {subsection}{\numberline {3.1.3}Exemplo 3: hip\IeC {\'o}tese de igualdade de par\IeC {\^a}metros}{28}{subsection.59}
+\contentsline {subsection}{\numberline {3.1.4}Exemplo 4: hip\IeC {\'o}tese sobre par\IeC {\^a}metros de regress\IeC {\~a}o ou dispers\IeC {\~a}o para respostas sob mesmo preditor}{29}{subsection.61}
+\contentsline {section}{\numberline {3.2}ANOVA e MANOVA via teste Wald}{30}{section.62}
+\contentsline {subsection}{\numberline {3.2.1}ANOVA e MANOVA tipo I}{31}{subsection.64}
+\contentsline {subsection}{\numberline {3.2.2}ANOVA e MANOVA tipo II}{31}{subsection.69}
+\contentsline {subsection}{\numberline {3.2.3}ANOVA e MANOVA tipo III}{32}{subsection.74}
+\contentsline {chapter}{\numberline {4}Resultados preliminares}{34}{chapter.79}
+\contentsline {section}{\numberline {4.1}Fun\IeC {\c c}\IeC {\~o}es implementadas}{34}{section.80}
+\contentsline {chapter}{\numberline {5}Cronograma}{37}{chapter.82}
+\contentsline {chapter}{REFER\^ENCIAS}{38}{chapter*.83}
 \contentsfinish 

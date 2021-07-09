@@ -41,69 +41,15 @@ mc\_manova\_disp()       & MANOVA tipo III para dispersão \\
 \label{tab:funcoes}
 \end{table}
 
-A função \emph{mc\_linear\_hypothesis()} é a implementação computacional em R do que foi exposto no \autoref{cap:wald}. É a função mais flexível que temos no conjunto de implementações. Com ela é possível especificar qualquer tipo de hipótese sobre parâmetros de regressão, dispersão ou potência de um modelo \emph{mcglm}. 
+A função \emph{mc\_linear\_hypothesis()} é a implementação computacional em R do que foi exposto no \autoref{cap:proposta}. É a função mais flexível que temos no conjunto de implementações. Com ela é possível especificar qualquer tipo de hipótese sobre parâmetros de regressão, dispersão ou potência de um modelo \emph{mcglm}. 
 
 As funções \emph{mc\_anova\_I()}, \emph{mc\_anova\_II()} e \emph{mc\_anova\_III()} são funções destinadas à avaliação dos parâmetros de regressão do modelo. Elas geram quadros de análise de variância por resposta para um modelo \emph{mcglm}. Implementamos 3 tipos diferentes de análises de variância mas não necessariamente essas implementações apresentarão os mesmos resultados que as versões com nomenclatura similar destinadas a modelos univariados disponíveis em outras bibliotecas.
-
-Para fins de ilustração dos testes feitos por cada tipo das análise de variância implementada, considere um modelo bivariado com preditor dado por:
-
-\begin{equation}
-g_r(\mu_r) = \beta_{r0} + \beta_{r1} x_1 + \beta_{r2} x_2 + \beta_{r3} x_1x_2.
-\end{equation}
-
-\noindent Em que o índice $r$ denota a variável resposta, r = 1,2. Temos deste modo um intercepto para cada resposta: $\beta_{10}$ para a primeira e $\beta_{20}$ para a segunda; temos também três parâmetros de regressão para cada resposta: $\beta_{11}$ é o efeito de $x_1$ sobre a resposta 1, $\beta_{21}$ é o efeito de $x_1$ sobre a resposta 2; $\beta_{12}$ é o efeito de $x_2$ sobre a resposta 1, $\beta_{22}$ é o efeito de $x_2$ sobre a resposta 2; por fim, $\beta_{13}$ representa o efeito da interação entre as variáveis $x_1$ e $x_2$ sobre a resposta 1 e $\beta_{23}$ representa o efeito da interação entre as variáveis $x_1$ e $x_2$ sobre a resposta 2. Todas as funções de análise de variância neste contexto retornariam dois quadros, um para cada resposta.
-
-Nossa implementação de análise de variância do tipo I (\emph{mc\_anova\_I()}) realiza testes sobre os parâmetros de regressão de forma sequencial. Neste cenário, nossa função faria os seguintes testes para cada resposta:
-
-\begin{enumerate}
-  \item Testa se todos os parâmetros são iguais a 0.
-  \item Testa se todos os parâmetros, exceto intercepto, são iguais a 0.
-  \item Testa se todos os parâmetros, exceto intercepto e os parâmetros referentes a $x_1$, são iguais a 0.
-  \item Testa se todos os parâmetros, exceto intercepto e os parâmetros referentes a $x_1$ e $x_2$, são iguais a 0.
-\end{enumerate}
-
-Cada um destes testes seria uma linha do quadro de análise de variância, e pode ser chamada de sequencial pois a cada linha é acrescentada uma variável. Em geral, justamente por esta sequencialidade, se torna difícil interpretar os efeitos das variáveis pela análise de variância do tipo I. Em contrapartida, as análises do tipo II e III testam hipóteses que são, geralmente de maior interesse ao analista.
-
-Nossa análise de variância do tipo II (\emph{mc\_anova\_II()}) efetua testes similares ao último teste da análise de variância sequencial. Em um modelo sem interação o que é feito é, em cada linha, testar o modelo completo contra o modelo sem uma variável. Deste modo se torna melhor interpretável o efeito daquela variável sobre o modelo completo, isto é, o impacto na qualidade do modelo caso retirássemos determinada variável.
-
-Caso haja interações no modelo, é testado o modelo completo contra o modelo sem o efeito principal e qualquer efeito de interação que envolva a variável. Considerando o preditor exemplo, a análise de variância do tipo II faria os seguintes testes para cada resposta:
-
-\begin{enumerate}
-  \item Testa se o intercepto é igual a 0.
-  
-  \item Testa se os parâmetros referentes a $x_1$ são iguais a 0. Ou seja, é avaliado o impacto da retirada de $x_1$ do modelo. Neste caso retira-se a interação pois nela há $x_1$.
-  
-  \item Testa se os parâmetros referentes a $x_2$ são iguais a 0. Ou seja, é avaliado o impacto da retirada de $x_2$ do modelo. Neste caso retira-se a interação pois nela há $x_2$.
-  
-  \item Testa se o efeito de interação é 0.
-
-\end{enumerate}
-
-Note que nas linhas em que se busca entender o efeito de $x_1$ e $x_2$ a interação também é avaliada, pois retira-se do modelo todos os parâmetros que envolvem aquela variável.
-
-Na análise de variância do tipo II são feitos testes comparando o modelo completo contra o modelo sem todos os parâmetros que envolvem determinada variável (sejam efeitos principais ou interações). Já nossa análise de variância do tipo III (\emph{mc\_anova\_III()}) considera o modelo completo contra o modelo sem determinada variável, seja ela efeito principal ou de interação. Deste modo, cuidados devem ser tomados nas conclusões pois uma variável não ter efeito constatado como efeito principal não quer dizer que não haverá efeito de interação.
-
-Considerando o preditor exemplo, a análise de variância do tipo III faria os seguintes testes para cada resposta:
-
-\begin{enumerate}
-  \item Testa se o intercepto é igual a 0.
-  
-  \item Testa se os parâmetros de efeito principal referentes a $x_1$ são iguais a 0. Ou seja, é avaliado o impacto da retirada de $x_1$ nos efeitos principais do modelo. Neste caso, diferente do tipo II, nada se supõe a respeito do parâmetro de interação, por mais que envolva $x_1$.
-  
-  \item Testa se os parâmetros de efeito principal referentes a $x_2$ são iguais a 0. Ou seja, é avaliado o impacto da retirada de $x_2$ nos efeitos principais do modelo. Novamente, diferente do tipo II, nada se supõe a respeito do parâmetro de interação, por mais que envolva $x_2$.
-  
-  \item Testa se o efeito de interação é 0.
-\end{enumerate}
-
-Note que nas linhas em que se testa o efeito de $x_1$ e $x_2$ mantém-se o efeito da interação, diferentemente do que é feito na análise de variância do tipo II.
-
-É importante notar que que as análises de variância do tipo II e III tal como foram implementadas nesse trabalho geram os mesmos resultados quando aplicadas a modelos sem efeitos de interação. Além disso, o \emph{mcglm} ajusta modelos com múltiplas respostas; deste modo, para cada resposta seria gerado um quadro de análise de variância. 
 
 As funções \emph{mc\_manova\_I()}, \emph{mc\_manova\_II()} e \emph{mc\_manova\_III()} também são funções destinadas à avaliação dos parâmetros de regressão do modelo. Elas geram quadros de análise de variância multivariada para um modelo \emph{mcglm}. 
 
 Estas funções são generalizações das funções \emph{mc\_anova\_I()}, \emph{mc\_anova\_II()} e \emph{mc\_anova\_III()}. Enquanto as funções de análise de variância simples visam avaliar o efeito das variáveis para cada resposta, as multivariadas visam avaliar o efeito das variáveis explicativas em todas as variáveis resposta simultaneamente. 
 
-Deste modo, em nosso exemplo, as funções de análise de variância univariadas retornariam um quadro para cada uma das respostas avaliando o efeito das variáveis para cada uma delas. Já as funções de análise de variância multivariadas retornariam um único quadro, em que avalia-se o efeito das variáveis em todas as respotas ao mesmo tempo. A sequência de testes feitos a cada linha do quadro são os mesmos mostrados para as funções de análise de variância univariadas.
+Deste modo, as funções de análise de variância univariadas retornariam um quadro para cada uma das respostas avaliando o efeito das variáveis para cada uma delas. Já as funções de análise de variância multivariadas retornariam um único quadro, em que avalia-se o efeito das variáveis em todas as respotas ao mesmo tempo. A sequência de testes feitos a cada linha do quadro são os mesmos mostrados para as funções de análise de variância univariadas.
 
 Na prática, utilizando o \emph{mcglm}, podemos ajustar modelos com diferentes preditores para as respostas, nestes casos as funções \emph{mc\_anova\_I()}, \emph{mc\_anova\_II()} e \emph{mc\_anova\_III()} funcionam sem problema algum. Contudo as funções \emph{mc\_manova\_I()}, \emph{mc\_manova\_II()} e \emph{mc\_manova\_III()} necessitam que os preditores sejam iguais para todas as respostas.
 
