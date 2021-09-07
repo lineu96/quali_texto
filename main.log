@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  9 JUL 2021 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.18)  28 JUL 2021 10:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1450,7 +1450,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (./0-iniciais/catalografica.aux) (./0-iniciais/aprovacao.aux)
 (./0-iniciais/dedica.aux) (./0-iniciais/agradece.aux) (./0-iniciais/resumo.aux)
 (./0-iniciais/abstract.aux) (./1-intro/texto.aux) (./2-literatura/texto.aux)
-(./3-proposta/texto.aux) (./4-result/texto.aux) (./5-cronograma/texto.aux))
+(./3-proposta/texto.aux) (./4-result/texto.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 46.
@@ -1714,100 +1714,8 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <12> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
-LaTeX Font Info:    Try loading font information for T1+ntxsups on input line 3
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxsups.fd
-File: t1ntxsups.fd 2015/01/17 v1.0
-)
-LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 12.0pt on input line 3.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `ntxsups' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `T1/ntxsups/m/n/12'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/ntxsups/m/n' will be
-(Font)              scaled to size 10.0pt on input line 3.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblleft ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquotedblright ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `AE ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotesinglbase ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `quotedblbase ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglleft ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guilsinglright ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotleft ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `guillemotright ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textexclamdown ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textquestiondown ' is missing
-(microtype)             in font `T1/ntxsups/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 6.
  [2
 
 
@@ -1826,7 +1734,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 (./0-iniciais/abstract.tex
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 7.
+(babel)             in language  on input line 5.
  [3
 
 
@@ -1952,20 +1860,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 278.
  [20]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 281.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 303.
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 308.
  [21]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 325.
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 343.
  [22]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 343.
-<2-literatura/th_950_650.png, id=460, 715.17188pt x 489.32813pt>
+<2-literatura/th_950_650.png, id=454, 715.17188pt x 489.32813pt>
 File: 2-literatura/th_950_650.png Graphic file (type png)
 <use 2-literatura/th_950_650.png>
 Package pdftex.def Info: 2-literatura/th_950_650.png  used on input line 350.
@@ -2049,38 +1949,28 @@ Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 8.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 23.
 [34
 
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 54.
+(babel)             in language  on input line 59.
  [35]
-
-LaTeX Warning: Reference `cap:mcglm' on page 36 undefined on input line 56.
-
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 62.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 67.
+ [36]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 72.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 164.
- [36]
-\openout2 = `5-cronograma/texto.aux'.
-
- (./5-cronograma/texto.tex
-Cap\'{\i }tulo 5.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 2.
-)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 165.
- [37
-
-
-
-] (./main.bbl
+ [37] (./main.bbl
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining portuges shorthand "|
@@ -2111,56 +2001,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--274
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 199.
  [41]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
  (./main.aux (./0-iniciais/catalografica.aux) (./0-iniciais/aprovacao.aux) (./0
 -iniciais/dedica.aux) (./0-iniciais/agradece.aux)
 (./0-iniciais/resumo.aux) (./0-iniciais/abstract.aux) (./1-intro/texto.aux)
-(./2-literatura/texto.aux) (./3-proposta/texto.aux) (./4-result/texto.aux)
-(./5-cronograma/texto.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 200.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
+(./2-literatura/texto.aux) (./3-proposta/texto.aux) (./4-result/texto.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 199.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 18094 strings out of 492982
- 267091 string characters out of 6134895
- 501932 words of memory out of 5000000
- 20778 multiletter control sequences out of 15000+600000
- 85321 words of font info for 225 fonts, out of 8000000 for 9000
+ 18048 strings out of 492982
+ 266209 string characters out of 6134895
+ 501386 words of memory out of 5000000
+ 20749 multiletter control sequences out of 15000+600000
+ 83150 words of font info for 220 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,18n,81p,1370b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,18n,81p,3053b,595s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
 fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvi
-ps/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/ec
-.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}</usr/
-share/texlive/texmf-dist/fonts/type1/public/newtx/ntxsups-Regular.pfb></usr/sha
-re/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/type1/pub
-lic/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/newtx/rntxbmi.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/newtx/rntxbmi7.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/newtx/rntxmi.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/newtx/rntxmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/newtx/rtxbmi-rev.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
-onts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txbmia.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/newtx/txbsys.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/txfonts/txmia.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newt
-x/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (41 pages, 336703 bytes).
+ps/newtx/ntx-ot1-tlf.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/n
+tx-ec-tlf.enc}</usr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/shar
+e/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/publ
+ic/tex-gyre/qtmri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/r
+ntxbmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/rntxbmi7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/rntxmi.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/newtx/rntxmi7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/newtx/rtxbmi-rev.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
+onts/txbmia.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txbsys.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/txfonts/txmia.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on main.pdf (41 pages, 339528 bytes).
 PDF statistics:
- 829 PDF objects out of 1000 (max. 8388607)
- 726 compressed objects within 8 object streams
- 186 named destinations out of 1000 (max. 500000)
- 20718 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 813 PDF objects out of 1000 (max. 8388607)
+ 713 compressed objects within 8 object streams
+ 187 named destinations out of 1000 (max. 500000)
+ 19670 words of extra memory for PDF output out of 20736 (max. 10000000)
 

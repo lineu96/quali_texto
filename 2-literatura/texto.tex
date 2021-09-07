@@ -35,7 +35,7 @@ Nesta extensão, os GLMs fazem uso de apenas duas funções, a função de vari�
 
 1. A função de variância potência, que caracteriza a família Tweedie de distribuições, em que a função de variância é dada por $\vartheta\left(\boldsymbol{\mu}; p\right) = \mu^p$, na qual destacam-se as distribuições: normal ($p$ = 0), Poisson ($p$ = 1), gama ($p$ = 2) e  normal inversa ($p$ = 3). Para mais informações consulte \citet{Jorgensen87} e \citet{Jorgensen97}.
 
-2. A função de dispersão Poisson–Tweedie, a qual caracteriza a família Poisson-Tweedie de distribuições, que visa contornar a inflexibilidade da utilização da função de variância potência para  respostas discretas. A família Poisson-Tweedie tem função de dispersão dada por $\vartheta\left(\boldsymbol{\mu}; p\right) = \mu + \mu^p$ e tem como casos particulares os mais famosos modelos para dados de contagem: Hermite ($p$ = 0), Neyman tipo A ($p$ = 1), binomial negativa ($p$ = 2) e Poisson–inversa gaussiana (p = $3$) \citep{Jorgensen15}. Não se trata de uma função de variância usual, mas é uma função que caracteriza o relacionamento entre média e variância.
+2. A função de dispersão Poisson–Tweedie, a qual caracteriza a família Poisson-Tweedie de distribuições, que visa contornar a inflexibilidade da utilização da função de variância potência para  respostas discretas. A família Poisson-Tweedie tem função de dispersão dada por $\vartheta\left(\boldsymbol{\mu}; p\right) = \mu + \tau\mu^p$, em que $\tau$ é o parâmetro de dispersão. A função de dispersão Poisson-Tweedie tem como casos particulares os mais famosos modelos para dados de contagem: Hermite ($p$ = 0), Neyman tipo A ($p$ = 1), binomial negativa ($p$ = 2) e Poisson–inversa gaussiana (p = $3$) \citep{Jorgensen15}. Não se trata de uma função de variância usual, mas é uma função que caracteriza o relacionamento entre média e variância.
 
 3. A função de variância binomial, dada por $\vartheta(\boldsymbol{\mu}) = \mu(1 - \mu)$, utilizada quando a variável resposta é binária, restrita a um intervalo ou quando tem-se o  número de sucessos em um número de tentativas.
 
@@ -262,7 +262,7 @@ distribuição.
   
 \end{enumerate}
 
-\subsection{Testes de hipótese em modelos de regressão}
+\subsection{Testes de hipóteses em modelos de regressão}
 
 Em modelos de regressão modela-se parâmetros de distribuições de probabilidade como uma função de outras variáveis. Basicamente, o parâmetro de interesse é reescrito como uma combinação linear de novos parâmetros associados a vetores numéricos que contém o valor de variáveis explicativas.
 
@@ -278,7 +278,7 @@ O teste do multiplicador de lagrange ou teste escore \citep{score1}, \citep{scor
 
 Com isto, apresentamos nesta seção uma visão geral destes três testes com suas características, hipóteses, estatísticas de teste e similaridades.
 
-\subsection{Teste da razão de verossimilhanças}
+\subsubsection{Teste da razão de verossimilhanças}
 
 Considere dois modelos de regressão ajustados para os quais as estimativas dos parâmetros foram obtidas por meio da maximização da função de verossimilhança. O primeiro destes modelos ($M_1$) é chamado de modelo irrestrito, isto é, com todas as variáveis explicativas. Já o segundo modelo ($M_0$) é chamado de modelo restrito, isto é, sem alguma(s) da(s) variável(is) explicativa(s). Considere que $M_0$ possui $q$ parâmetros a menos que $M_1$.
 
@@ -300,7 +300,7 @@ $$
 
 \noindent em que LRT $\sim \chi^2_q$. É possível notar que quanto menor for a razão de verossimilhanças maior será a estatística de teste, ou seja, mais provável será a rejeição de $H_0$ pois $L_0$ e $L_1$ se afastam.
 
-\subsection{Teste Wald}
+\subsubsection{Teste Wald}
 
 Considere um único modelo de regressão ajustado com $p$ parâmetros obtidas por meio da maximização da função de verossimilhança. $\boldsymbol{\beta}$ representa o vetor de parâmetros de regressão deste modelo, em que as estimativas são dadas por $\boldsymbol{\hat\beta}$.
 
@@ -320,9 +320,9 @@ $$
 WT = (\boldsymbol{L\hat\beta} - \boldsymbol{c})^T \ (\boldsymbol{L \ Var^{-1}(\hat\beta) \ L^T})^{-1} \ (\boldsymbol{L\hat\beta} - \boldsymbol{c}),
 $$
 
-\noindent em que $WT \sim \chi^2_q$. Note que a estatística de teste necessita de elementos que devem ser especificados pelo pesquisador e quantidades facilmente obtidas após ajuste do modelo: as estimativas dos parâmetros e a matriz de variância e covariância dos mesmos.
+\noindent em que $WT \sim \chi^2_q$. Note que a estatística de teste necessita de elementos que devem ser especificados pelo pesquisador e quantidades facilmente obtidas após ajuste do modelo: as estimativas dos parâmetros e a matriz de variância e covariância das estimativas.
 
-\subsection{Teste escore}
+\subsubsection{Teste escore}
 
 Considere um único modelo de regressão ajustado com $p$ parâmetros obtidas por meio da maximização da função de verossimilhança. $\boldsymbol{\beta}$ representa o vetor de parâmetros de regressão deste modelo, em que as estimativas são dadas por $\boldsymbol{\hat\beta}$.
 
@@ -338,9 +338,9 @@ $$
 
 $$ LMT = \boldsymbol{S^{'}(\hat\beta}) \ \boldsymbol{Var(\hat\beta)} \ \boldsymbol{S(\hat\beta}),$$
 
-\noindent em que $S(\hat\beta)$ representa a função escore e $\boldsymbol{Var(\hat\beta)}$ a matriz de variâncias avaliadas sob o modelo restrito ($H_0$). $WT \sim \chi^2_q$, em que $q$ representa o número de parâmetros fixados sob $H_0$.
+\noindent em que $S(\hat\beta)$ representa a função escore e $\boldsymbol{Var(\hat\beta)}$ a matriz de variâncias avaliadas sob o modelo restrito ($H_0$). $LMT \sim \chi^2_q$, em que $q$ representa o número de parâmetros fixados sob $H_0$.
 
-\subsection{Visão geral}
+\subsubsection{Visão geral}
 
 Os três testes podem ser utilizados para avaliar restrições aos parâmetros de modelos lineares no sentido de avaliar se a retirada de variáveis explicativas do modelo reduz significativamente o ajuste. No caso do teste de razão de verossimilhanças, dois modelos encaixados precisam ser ajustados a fim de verificar a diferença entre eles. Já o teste Wald e o escore necessitam de apenas um modelo. Além disso os testes são assintóticamente equivalentes. Em amostras finitas estes testes podem apresentar resultados diferentes de tal modo que a estatística de teste WT é maior que a estatística LRT que, por sua vez, é maior que LMT \citep{conflict}.
 
@@ -353,12 +353,12 @@ A figura \autoref{fig:testes} ilustra o que cada um dos três testes faz. No eix
 \label{fig:testes}
 \end{figure}
 
-\section{ANOVA e MANOVA}
+\subsection{ANOVA e MANOVA}
 
 Quando trabalhamos com modelos univariados, uma das formas de avaliar a significância de cada uma das variáveis de uma forma procedural é através da análise de variância (ANOVA) \citep{anova_fisher}. Este método consiste em efetuar testes de hipóteses sucessivos impondo restrições ao modelo original. O objetivo é testar se a ausência de determinada variável gera um modelo significativamente inferior que o modelo com determinada variável. Os resultados destes sucessivos testes são sumarizados numa tabela: o chamado quadro de análise de variância. Em geral, este quadro contêm em cada linha: a variável, o valor de uma estatística de teste referente à hipótese de nulidade de todos os parâmetros associados à esta variável, os graus de liberdade desta hipótese, e um p-valor associado à hipótese testada naquela linha do quadro.
 
 Trata-se de um interessante procedimento para avaliar a relevância de uma variável ao problema, contudo, cuidados devem ser tomados no que diz respeito à forma como o quadro foi elaborado. Como já mencionado, cada linha do quadro refere-se a uma hipótese e estas hipóteses podem ser formuladas de formas distintas. Formas conhecidas de se elaborar o quadro são as chamadas ANOVAs do tipo I, II e III. Esta nomenclatura vem do software estatístico SAS \citep{sas}, contudo as implementações existentes em outros softwares que seguem esta nomenclatura não necessariamente correspondem ao que está implementado no SAS. No software R \citep{softwareR} as implementações dos diferentes tipos de análise de variância podem ser obtidas e usadas no pacote \emph{car} \citep{car}.
 
-Geralmente, no contexto de modelos de regressão, para gerar o quadro de análise de variância, uma sequência de testes de testes da razão de verossimilhanças são realizados para avaliar o efeito de cada variável explicativa do modelo. Contudo é possível gerar quadros de Análise de Variância através do teste Wald. 
+Geralmente, no contexto de modelos de regressão, para gerar o quadro de análise de variância, uma sequência de testes de testes da razão de verossimilhanças são realizados para avaliar o efeito de cada variável explicativa do modelo. Contudo é possível gerar quadros de análise de variância através do teste Wald. 
 
-Do mesmo modo que é feito para um modelo univariado, podemos chegar também a uma análise de variância multivariada (MANOVA) realizando sucessivos testes de hipóteses nos quais existe o interesse em avaliar o efeito de determinada variável em todas as respostas simultaneamente. Portanto, a pergunta que a ser respondida seria: esta variável tem efeito diferente de 0 para todas as respostas? A MANOVA clássica \citep{manova} é um assunto com vasta discussão na literatura e possui diversas propostas com o objetivo de verificar a nulidade dos parâmetros de um modelo de regressão multivariado, como o $\lambda$ de Wilk's \citep{wilks}, traço de Hotelling-Lawley \citep{lawley}; \citep{hotelling}, traço de Pillai \citep{pillai} e maior raiz de Roy \citep{roy}. Tal como no caso univariado basta, para cada linha do quadro de Análise de Variância, especificar corretamente uma matriz $\boldsymbol{L}$ que represente de forma adequada a hipótese a ser testada.
+Do mesmo modo que é feito para um modelo univariado, podemos chegar também a uma análise de variância multivariada (MANOVA) realizando sucessivos testes de hipóteses nos quais existe o interesse em avaliar o efeito de determinada variável em todas as respostas simultaneamente. Portanto, a pergunta que a ser respondida seria: esta variável tem efeito diferente de 0 para todas as respostas? A MANOVA clássica \citep{manova} é um assunto com vasta discussão na literatura e possui diversas propostas com o objetivo de verificar a nulidade dos parâmetros de um modelo de regressão multivariado, como o $\lambda$ de Wilk's \citep{wilks}, traço de Hotelling-Lawley \citep{lawley}; \citep{hotelling}, traço de Pillai \citep{pillai} e maior raiz de Roy \citep{roy}. Tal como no caso univariado basta, para cada linha do quadro de análise de variância, especificar corretamente uma matriz $\boldsymbol{L}$ que represente de forma adequada a hipótese a ser testada.

@@ -3,7 +3,7 @@
 
 \label{cap:proposta}
 
-Tal como descrito no \autoref{cap:literatura}, a construção do teste Wald é baseada nas estimativas de máxima verossimilhança. Porém, ao avaliar a estatística de teste é possível verificar que ela não faz uso explícito da função de verossimilhança, e sim de um vetor de estimativas dos parâmetros e uma matriz de variância e covariância destes parâmetros. Assim, por mais que os McGLMs não sejam ajustados com base na maximização da função de verossimilhança para obtenção dos parâmetros do modelo, o método de estimação apresentado no \autoref{cap:literatura} fornece os componentes necessários para uma adaptação do teste. 
+Tal como descrito no \autoref{cap:literatura}, a construção do teste Wald é baseada nas estimativas de máxima verossimilhança. Porém, ao avaliar a estatística de teste é possível verificar que ela não faz uso explícito da função de verossimilhança, e sim de um vetor de estimativas dos parâmetros e uma matriz de variância e covariância destas estimativas. Assim, por mais que os McGLMs não sejam ajustados com base na maximização da função de verossimilhança para obtenção dos parâmetros do modelo, o método de estimação apresentado no \autoref{cap:literatura} fornece os componentes necessários para uma adaptação do teste. 
 
 Sendo assim, das três opções clássicas de testes de hipóteses comumente aplicados a problemas de regressão (razão de verossimilhanças, Wald e escore), o teste Wald se torna o mais atrativo no contexto dos McGLMs pois é o mais simples de se adaptar. Outra vantagem do teste Wald em relação a seus concorrentes é que existe a possibilidade de formular hipóteses para testar qualquer valor. Quando se trata dos McGLMs, esta ideia se torna especialmente atrativa pois forncece ferramentas para avaliar os parâmetros de potência.
 
@@ -125,7 +125,7 @@ H_0: \boldsymbol{L}\boldsymbol{\theta_{\beta,\tau,p}} = \boldsymbol{c} \ vs \ H_
 
 
 \item $\boldsymbol{L} = \begin{bmatrix} 0 & 1 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 1 & 0 & 0 \end{bmatrix}$
+0 & 0 & 0 & 1 & 0 & 0 \end{bmatrix}.$
  
 \item $\boldsymbol{c} = \begin{bmatrix} 0 \\ 0 \end{bmatrix}$, é o valor sob hipótese nula. 
 
